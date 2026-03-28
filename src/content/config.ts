@@ -14,6 +14,8 @@ const posts = defineCollection({
         readTime: z.string(),
         featured: z.boolean().default(false),
         tags: z.array(z.string()).default([]),
+        ghostSlug: z.string().optional(),
+        ghostId: z.string().optional(),
     }),
 });
 

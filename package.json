@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "batterytrail",
   "type": "module",
   "version": "1.0.0",
   "scripts": {
@@ -14,10 +14,11 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.93.3",
+    "@astrojs/cloudflare": "^12.6.13",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.17.1",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "vite": "^8.0.3"
   }
 }
