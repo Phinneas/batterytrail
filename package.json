@@ -23,5 +23,8 @@
   },
   "devDependencies": {
     "typescript": "^5.9.3"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.60.0"
   }
 }
