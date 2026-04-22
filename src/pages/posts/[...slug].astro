@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getBlogPosts, getBlogPostBySlug, parseTags, type BlogPost } from "../../lib/sonicjs";
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
@@ -7,81 +7,77 @@ import PostSidebarLeft from "../../components/PostSidebarLeft.astro";
 import PostSidebarRight from "../../components/PostSidebarRight.astro";
 
 export async function getStaticPaths() {
-    const posts = await getCollection("posts");
+    const posts = await getBlogPosts();
     return posts.map((post) => ({
-        params: { slug: post.slug },
+        params: { slug: post.data.slug },
         props: { post },
     }));
 }
 
 const { post } = Astro.props;
-const { Content, headings } = await post.render();
+const tags = parseTags(post.data.tags);
 
-const allPosts = await getCollection("posts");
-
-// Scoring system for relatedness
-const relatedPostsScored = allPosts
-    .filter((p) => p.slug !== post.slug)
+// Get related posts
+const allPosts = await getBlogPosts();
+const relatedPosts = allPosts
+    .filter((p) => p.id !== post.id)
     .map((p) => {
         let score = 0;
-
-        // 1. Shared tags (Highest weight)
-        if (p.data.tags && post.data.tags) {
-            const sharedTags = p.data.tags.filter((tag) =>
-                post.data.tags.includes(tag),
+        const pTags = parseTags(p.data.tags);
+        if (pTags.length && tags.length) {
+            const sharedTags = pTags.filter((tag: string) =>
+                tags.includes(tag),
             );
             score += sharedTags.length * 5;
         }
-
-        // 2. Shared category
         if (p.data.category === post.data.category) {
             score += 3;
         }
-
-        // 3. Shared subCategory
-        if (
-            p.data.subCategory &&
-            post.data.subCategory &&
-            p.data.subCategory === post.data.subCategory
-        ) {
-            score += 2;
-        }
-
         return { post: p, score };
     })
     .filter((item) => item.score > 0)
-    .sort(
-        (a, b) =>
-            b.score - a.score ||
-            b.post.data.pubDate.valueOf() - a.post.data.pubDate.valueOf(),
-    )
+    .sort((a, b) => b.score - a.score || b.post.created_at - a.post.created_at)
     .slice(0, 3);
 
 // Fallback to latest posts if no related posts found
-let finalRelatedPosts = relatedPostsScored.map((item) => item.post);
+let finalRelatedPosts = relatedPosts.map((item) => item.post);
 if (finalRelatedPosts.length < 3) {
     const fallbackPosts = allPosts
         .filter(
             (p) =>
-                p.slug !== post.slug &&
-                !finalRelatedPosts.find((rp) => rp.slug === p.slug),
+                p.id !== post.id &&
+                !finalRelatedPosts.find((rp) => rp.id === p.id),
         )
-        .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+        .sort((a, b) => b.created_at - a.created_at)
         .slice(0, 3 - finalRelatedPosts.length);
     finalRelatedPosts = [...finalRelatedPosts, ...fallbackPosts];
 }
 
 const formattedRelatedPosts = finalRelatedPosts.map((p) => ({
     title: p.data.title,
-    date: p.data.pubDate.toLocaleDateString("en-US", {
+    date: new Date(p.data.publishedAt).toLocaleDateString("en-US", {
         month: "short",
         day: "2-digit",
         year: "numeric",
     }),
     readTime: p.data.readTime,
-    image: p.data.image,
-    slug: p.slug,
+    image: p.data.featuredImage,
+    slug: p.data.slug,
 }));
+
+// Extract headings from HTML content for TOC
+const headingRegex = /<h([2-3])[^>]*id=["']([^"']*)["'][^>]*>(.*?)<\/h[2-3]>/g;
+const headings: { depth: number; slug: string; text: string }[] = [];
+let match;
+while ((match = headingRegex.exec(post.data.content)) !== null) {
+    headings.push({
+        depth: parseInt(match[1]),
+        slug: match[2],
+        text: match[3].replace(/<[^>]+>/g, ''),
+    });
+}
+
+const pubDate = new Date(post.data.publishedAt);
 
 const formatDate = (date: Date) => {
     return date.toLocaleDateString("en-US", {
@@ -92,8 +88,48 @@ const formatDate = (date: Date) => {
 };
 ---
 
-<Layout title={`${post.data.title} | BatteryTrail`}>
+<Layout
+    title={`${post.data.title} | BatteryTrail`}
+    description={post.data.excerpt}
+    image={post.data.featuredImage}
+    article={{
+        publishedTime: pubDate.toISOString(),
+        author: post.data.author,
+        category: post.data.category,
+        tags: tags,
+        slug: post.data.slug,
+    }}
+>
     <Header />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": post.data.title,
+        "description": post.data.excerpt,
+        "image": post.data.featuredImage,
+        "datePublished": pubDate.toISOString(),
+        "author": {
+            "@type": "Organization",
+            "name": post.data.author,
+            "url": "https://www.batterytrail.com"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "BatteryTrail",
+            "url": "https://www.batterytrail.com",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.batterytrail.com/favicon.svg"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": new URL(`/posts/${post.data.slug}`, Astro.site).toString()
+        },
+        ...(tags.length ? {"keywords": tags.join(", ")} : {})
+    })} />
 
     <main class="relative flex min-h-screen flex-col">
         <div
@@ -101,7 +137,7 @@ const formatDate = (date: Date) => {
         >
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 relative">
                 <!-- Left Sidebar -->
-                <PostSidebarLeft slug={post.slug} />
+                <PostSidebarLeft slug={post.data.slug} />
 
                 <!-- Article Content -->
                 <article class="col-span-1 lg:col-span-8 w-full">
@@ -112,13 +148,6 @@ const formatDate = (date: Date) => {
                             >
                                 {post.data.category}
                             </span>
-                            {
-                                post.data.subCategory && (
-                                    <span class="inline-flex items-center rounded-lg bg-slate-100 dark:bg-[#224249]/50 px-3 py-1 text-sm font-medium text-slate-600 dark:text-slate-300">
-                                        {post.data.subCategory}
-                                    </span>
-                                )
-                            }
                         </div>
 
                         <h1
@@ -130,22 +159,6 @@ const formatDate = (date: Date) => {
                         <div
                             class="flex items-center gap-4 py-4 border-b border-slate-200 dark:border-[#224249]"
                         >
-                            <div class="relative">
-                                {
-                                    post.data.authorImage && (
-                                        <img
-                                            src={post.data.authorImage}
-                                            alt={post.data.author}
-                                            class="h-12 w-12 rounded-full ring-2 ring-white dark:ring-[#102023] object-cover"
-                                            loading="lazy"
-                                            decoding="async"
-                                        />
-                                    )
-                                }
-                                <span
-                                    class="absolute bottom-0 right-0 block h-3 w-3 rounded-full bg-green-500 ring-2 ring-white dark:ring-[#102023]"
-                                ></span>
-                            </div>
                             <div class="flex flex-col">
                                 <span
                                     class="text-sm font-bold text-slate-900 dark:text-white"
@@ -154,7 +167,7 @@ const formatDate = (date: Date) => {
                                 <div
                                     class="flex items-center gap-2 text-sm text-slate-500 dark:text-[#90c1cb]"
                                 >
-                                    <span>{formatDate(post.data.pubDate)}</span>
+                                    <span>{formatDate(pubDate)}</span>
                                     <span>•</span>
                                     <span>{post.data.readTime}</span>
                                 </div>
@@ -210,9 +223,8 @@ const formatDate = (date: Date) => {
 
                     <div
                         class="prose prose-lg dark:prose-invert max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl"
-                    >
-                        <Content />
-                    </div>
+                        set:html={post.data.content}
+                    />
 
                     <div
                         class="mt-12 pt-8 border-t border-slate-200 dark:border-[#224249]"
@@ -226,7 +238,7 @@ const formatDate = (date: Date) => {
                                     >Tags:</span
                                 >
                                 {
-                                    post.data.tags.map((tag) => (
+                                    tags.map((tag: string) => (
                                         <span class="px-3 py-1 rounded-full bg-slate-100 dark:bg-surface-dark text-xs font-medium text-slate-600 dark:text-slate-300 hover:bg-primary/20 hover:text-primary transition-colors cursor-default">
                                             #{tag}
                                         </span>
@@ -289,7 +301,6 @@ const formatDate = (date: Date) => {
         const copyButtons = document.querySelectorAll(".copy-button");
         copyButtons.forEach((button) => {
             button.addEventListener("click", async () => {
-                // Find the nearest code block relative to the button's wrapper
                 const wrapper = button.closest(".code-block-wrapper");
                 const codeElement = wrapper?.querySelector("pre");
                 const code = codeElement?.innerText || "";
@@ -303,18 +314,13 @@ const formatDate = (date: Date) => {
                 if (code && textSpan) {
                     try {
                         await navigator.clipboard.writeText(code);
-
-                        // Visual feedback
                         if (textSpan) textSpan.textContent = "Copied!";
-
                         if (iconElement) {
                             iconElement.innerHTML = `
                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
                             `;
                         }
-
                         button.classList.add("text-primary");
-
                         setTimeout(() => {
                             if (textSpan) textSpan.textContent = "Copy";
                             if (iconElement) {

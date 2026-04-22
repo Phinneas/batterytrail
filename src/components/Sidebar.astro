@@ -1,7 +1,7 @@
 ---
-import { getCollection } from "astro:content";
+import { getBlogPosts } from "../lib/sonicjs";
 
-const allPosts = await getCollection("posts");
+const allPosts = await getBlogPosts();
 
 // Randomly select 3 posts for Most Popular on each render
 const shuffled = [...allPosts].sort(() => Math.random() - 0.5);
@@ -55,7 +55,7 @@ const popularPosts = shuffled.slice(0, 3);
             {
                 popularPosts.map((post, index) => (
                     <>
-                        <a class="group block" href={`/posts/${post.slug}`}>
+                        <a class="group block" href={`/posts/${post.data.slug}`}>
                             <span class="text-primary text-xs font-bold uppercase mb-1 block">
                                 {post.data.category}
                             </span>

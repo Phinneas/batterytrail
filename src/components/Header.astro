@@ -1,13 +1,13 @@
 ---
-import { getCollection } from "astro:content";
+import { getBlogPosts, parseTags } from "../lib/sonicjs";
 
-const allPosts = await getCollection("posts");
+const allPosts = await getBlogPosts();
 const searchablePosts = allPosts.map((post) => ({
     title: post.data.title,
-    description: post.data.description,
-    slug: post.slug,
+    description: post.data.excerpt,
+    slug: post.data.slug,
     category: post.data.category,
-    tags: post.data.tags || [],
+    tags: parseTags(post.data.tags),
 }));
 ---
 
