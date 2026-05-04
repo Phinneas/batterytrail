@@ -1,5 +1,5 @@
-const API_URL = import.meta.env.SONICJS_API_URL || 'http://localhost:8787';
-const API_TOKEN = import.meta.env.SONICJS_API_TOKEN || '';
+const API_URL = process.env.SONICJS_API_URL || 'http://localhost:8787';
+const API_TOKEN = process.env.SONICJS_API_TOKEN || '';
 
 interface SonicJSResponse<T> {
   data: T;
