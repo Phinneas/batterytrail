@@ -47,59 +47,59 @@ function headers(): Record<string, string> {
 }
 
 export async function getBlogPosts(): Promise<BlogPost[]> {
-  const response = await fetch(
-    `${API_URL}/api/collections/blog-posts/content?filter[status][equals]=published&sort=-created_at`,
-    { headers: headers() }
-  );
-
-  if (!response.ok) {
-    throw new Error(`Failed to fetch posts: ${response.statusText}`);
+  try {
+    const response = await fetch(
+      `${API_URL}/api/collections/blog-posts/content?filter[status][equals]=published&sort=-created_at`,
+      { headers: headers() }
+    );
+    if (!response.ok) return [];
+    const result: SonicJSResponse<BlogPost[]> = await response.json();
+    return result.data;
+  } catch {
+    return [];
   }
-
-  const result: SonicJSResponse<BlogPost[]> = await response.json();
-  return result.data;
 }
 
 export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> {
-  const response = await fetch(
-    `${API_URL}/api/collections/blog-posts/content?filter[data.slug][equals]=${slug}&filter[status][equals]=published`,
-    { headers: headers() }
-  );
-
-  if (!response.ok) {
-    throw new Error(`Failed to fetch post: ${response.statusText}`);
+  try {
+    const response = await fetch(
+      `${API_URL}/api/collections/blog-posts/content?filter[data.slug][equals]=${slug}&filter[status][equals]=published`,
+      { headers: headers() }
+    );
+    if (!response.ok) return null;
+    const result: SonicJSResponse<BlogPost[]> = await response.json();
+    return result.data[0] || null;
+  } catch {
+    return null;
   }
-
-  const result: SonicJSResponse<BlogPost[]> = await response.json();
-  return result.data[0] || null;
 }
 
 export async function getFeaturedPosts(): Promise<BlogPost[]> {
-  const response = await fetch(
-    `${API_URL}/api/collections/blog-posts/content?filter[status][equals]=published&filter[data.featured][equals]=true&sort=-created_at&limit=1`,
-    { headers: headers() }
-  );
-
-  if (!response.ok) {
-    throw new Error(`Failed to fetch featured posts: ${response.statusText}`);
+  try {
+    const response = await fetch(
+      `${API_URL}/api/collections/blog-posts/content?filter[status][equals]=published&filter[data.featured][equals]=true&sort=-created_at&limit=1`,
+      { headers: headers() }
+    );
+    if (!response.ok) return [];
+    const result: SonicJSResponse<BlogPost[]> = await response.json();
+    return result.data;
+  } catch {
+    return [];
   }
-
-  const result: SonicJSResponse<BlogPost[]> = await response.json();
-  return result.data;
 }
 
 export async function getRelatedPosts(post: BlogPost, limit = 3): Promise<BlogPost[]> {
-  const response = await fetch(
-    `${API_URL}/api/collections/blog-posts/content?filter[status][equals]=published&filter[data.category][equals]=${post.data.category}&sort=-created_at&limit=${limit + 1}`,
-    { headers: headers() }
-  );
-
-  if (!response.ok) {
+  try {
+    const response = await fetch(
+      `${API_URL}/api/collections/blog-posts/content?filter[status][equals]=published&filter[data.category][equals]=${post.data.category}&sort=-created_at&limit=${limit + 1}`,
+      { headers: headers() }
+    );
+    if (!response.ok) return [];
+    const result: SonicJSResponse<BlogPost[]> = await response.json();
+    return result.data.filter((p) => p.id !== post.id).slice(0, limit);
+  } catch {
     return [];
   }
-
-  const result: SonicJSResponse<BlogPost[]> = await response.json();
-  return result.data.filter((p) => p.id !== post.id).slice(0, limit);
 }
 
 export function parseTags(tagsField: string): string[] {
