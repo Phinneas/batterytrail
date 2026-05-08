@@ -1,46 +1,10 @@
-@import "tailwindcss";
-@plugin "@tailwindcss/typography";
-
-@theme {
-  --color-primary: #0dccf2;
-  --color-background-light: #f5f8f8;
-  --color-background-dark: #101f22;
-  --color-card-dark: #162a2e;
-  --color-card-light: #ffffff;
-  --color-surface-dark: #162a2f;
-  --color-surface-darker: #0b1618;
-  --color-nav-bg: #0b1618;
-  --color-background-card: #182f34;
-  --color-background-input: #224249;
-  --color-text-muted: #90c1cb;
-
-  --font-display: "Aldrich", sans-serif;
-  --font-heading: "Oswald", sans-serif;
-  --font-body: "Roboto Condensed", sans-serif;
-
-  --radius-default: 0.25rem;
-  --radius-lg: 0.5rem;
-  --radius-xl: 0.75rem;
-  --radius-2xl: 1rem;
-
-  --animate-pulse-slow: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-
-  @keyframes pulse-slow {
-
-    0%,
-    100% {
-      opacity: 1;
-    }
-
-    50% {
-      opacity: 0.5;
-    }
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   body {
-    font-family: var(--font-body);
+    font-family: theme('fontFamily.body');
     @apply bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 transition-colors duration-300;
   }
 
@@ -50,7 +14,7 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-display);
+    font-family: theme('fontFamily.display');
     @apply uppercase tracking-tight;
   }
 
@@ -116,7 +80,6 @@
 
   .prose .code-block-wrapper code {
     @apply !bg-transparent !p-0 !text-slate-300;
-    font-family: var(--font-mono);
   }
 
   /* Custom Syntax Highlighting Overrides to match design */
