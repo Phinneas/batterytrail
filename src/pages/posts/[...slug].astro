@@ -53,9 +53,12 @@ if (finalRelatedPosts.length < 3) {
     finalRelatedPosts = [...finalRelatedPosts, ...fallbackPosts];
 }
 
-const formattedRelatedPosts = finalRelatedPosts.map((p) => ({
+const formattedRelatedPosts = finalRelatedPosts.map((p) => {
+    const _rd = p.data.publishedAt;
+    const _d = (_rd && !isNaN(new Date(_rd).getTime())) ? new Date(_rd) : new Date(p.created_at);
+    return {
     title: p.data.title,
-    date: new Date(p.data.publishedAt).toLocaleDateString("en-US", {
+    date: _d.toLocaleDateString("en-US", {
         month: "short",
         day: "2-digit",
         year: "numeric",
@@ -63,7 +66,8 @@ const formattedRelatedPosts = finalRelatedPosts.map((p) => ({
     readTime: p.data.readTime,
     image: p.data.featuredImage,
     slug: p.data.slug,
-}));
+    };
+});
 
 // Extract headings from HTML content for TOC
 const headingRegex = /<h([2-3])[^>]*id=["']([^"']*)["'][^>]*>(.*?)<\/h[2-3]>/g;
@@ -77,7 +81,12 @@ while ((match = headingRegex.exec(post.data.content)) !== null) {
     });
 }
 
-const pubDate = new Date(post.data.publishedAt);
+// Guard: if publishedAt is missing/invalid (can happen when a post is edited
+// through the CMS UI without re-entering the date), fall back to created_at.
+const _rawDate = post.data.publishedAt;
+const pubDate = (_rawDate && !isNaN(new Date(_rawDate).getTime()))
+  ? new Date(_rawDate)
+  : new Date(post.created_at);
 
 const formatDate = (date: Date) => {
     return date.toLocaleDateString("en-US", {

@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { marked } from 'marked';
 
 const API_URL = import.meta.env.SONICJS_API_URL || process.env.SONICJS_API_URL || 'http://localhost:8787';
 const API_TOKEN = import.meta.env.SONICJS_API_TOKEN || process.env.SONICJS_API_TOKEN || '';
@@ -93,7 +94,11 @@ async function fetchAllPosts(): Promise<BlogPost[]> {
 
   // Try cache first
   const cached = readCache();
-  if (cached) { _allPosts = cached; return cached; }
+  if (cached) {
+    const processed = processPostContent(cached);
+    _allPosts = processed;
+    return processed;
+  }
 
   // Fetch from API
   console.log(`[sonicjs] Fetching posts from ${API_URL}...`);
@@ -105,14 +110,19 @@ async function fetchAllPosts(): Promise<BlogPost[]> {
     if (!response.ok) {
       console.warn(`[sonicjs] API returned ${response.status}, trying stale cache...`);
       const stale = readStaleCache();
-      if (stale) { _allPosts = stale; return stale; }
+      if (stale) {
+        const processed = processPostContent(stale);
+        _allPosts = processed;
+        return processed;
+      }
       throw new Error(`SonicJS API returned ${response.status}`);
     }
     const result: SonicJSResponse<BlogPost[]> = await response.json();
     console.log(`[sonicjs] Fetched ${result.data.length} posts in ${result.meta?.cache ? 'cached' : 'live'} mode`);
     writeCache(result.data);
-    _allPosts = result.data;
-    return result.data;
+    const processed = processPostContent(result.data);
+    _allPosts = processed;
+    return processed;
   } catch (e: any) {
     if (e.name === 'AbortError') {
       console.warn(`[sonicjs] API fetch timed out after ${FETCH_TIMEOUT}ms, trying stale cache...`);
@@ -120,9 +130,31 @@ async function fetchAllPosts(): Promise<BlogPost[]> {
       console.warn(`[sonicjs] API fetch failed:`, e.message);
     }
     const stale = readStaleCache();
-    if (stale) { _allPosts = stale; return stale; }
+    if (stale) {
+      const processed = processPostContent(stale);
+      _allPosts = processed;
+      return processed;
+    }
     throw new Error(`SonicJS API unreachable and no cache available. Set SONICJS_API_URL or check your connection.`);
   }
+}
+
+/** Convert Markdown content to HTML. Posts already edited via the CMS UI
+ *  arrive as HTML (<p>, <h1>…) — skip those to avoid double-processing. */
+function processPostContent(posts: BlogPost[]): BlogPost[] {
+  return posts.map(post => {
+    const raw = post.data.content || '';
+    const isAlreadyHtml = raw.trimStart().startsWith('<');
+    return isAlreadyHtml
+      ? post
+      : {
+          ...post,
+          data: {
+            ...post.data,
+            content: marked(raw) as string,
+          },
+        };
+  });
 }
 
 function readStaleCache(): BlogPost[] | null {
