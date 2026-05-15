@@ -3,9 +3,12 @@ import { getBlogPosts, parseTags } from '../lib/sonicjs';
 
 export async function GET(context) {
   const posts = await getBlogPosts();
-  const sortedPosts = posts.sort(
-    (a, b) => new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf()
-  );
+  function safeDate(post) {
+    const d = new Date(post.data.publishedAt);
+    return isNaN(d.getTime()) ? new Date(post.created_at) : d;
+  }
+
+  const sortedPosts = posts.sort((a, b) => safeDate(b).valueOf() - safeDate(a).valueOf());
 
   return rss({
     title: 'BatteryTrail',
@@ -13,7 +16,7 @@ export async function GET(context) {
     site: context.site,
     items: sortedPosts.map((post) => ({
       title: post.data.title,
-      pubDate: new Date(post.data.publishedAt),
+      pubDate: safeDate(post),
       description: post.data.excerpt,
       link: `/posts/${post.data.slug}/`,
       categories: [post.data.category, ...parseTags(post.data.tags)],
