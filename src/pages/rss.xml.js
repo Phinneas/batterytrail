@@ -19,7 +19,7 @@ export async function GET(context) {
       pubDate: safeDate(post),
       description: post.data.excerpt,
       link: `/posts/${post.data.slug}/`,
-      categories: [post.data.category, ...parseTags(post.data.tags)],
+      categories: [post.data.category, ...parseTags(post.data.tags)].filter(Boolean),
     })),
     customData: `<language>en-us</language>`,
   });

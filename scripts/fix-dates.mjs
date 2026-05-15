@@ -51,23 +51,29 @@ async function fetchPosts() {
   return data.data || [];
 }
 
-async function patchPost(id, publishedAt) {
+async function patchPost(id, fields) {
   // Try PATCH first, fall back to PUT if not supported
   const url = `${API_URL}/api/collections/blog-posts/content/${id}`;
   let res = await fetch(url, {
     method: 'PATCH',
     headers: headers(),
-    body: JSON.stringify({ data: { publishedAt } }),
+    body: JSON.stringify({ data: fields }),
   });
   if (res.status === 405) {
-    // Some SonicJS versions only support PUT
     res = await fetch(url, {
       method: 'PUT',
       headers: headers(),
-      body: JSON.stringify({ data: { publishedAt } }),
+      body: JSON.stringify({ data: fields }),
     });
   }
   return res;
+}
+
+/** Guess a category from the slug (rough heuristic) */
+function guessCategory(slug) {
+  if (slug.includes('ebike') || slug.includes('e-bike') || slug.includes('electric-bike')) return 'Ebike';
+  if (slug.includes('solar')) return 'RV';
+  return 'RV';
 }
 
 async function main() {
@@ -86,20 +92,31 @@ async function main() {
   const posts = await fetchPosts();
   console.log(`  Found ${posts.length} posts.\n`);
 
-  const badPosts = posts.filter(p => !p.data.publishedAt || isNaN(new Date(p.data.publishedAt).getTime()));
+  const badPosts = posts.filter(p =>
+    !p.data.publishedAt || isNaN(new Date(p.data.publishedAt).getTime()) || !p.data.category
+  );
   if (badPosts.length === 0) {
-    console.log('✓ No posts with invalid publishedAt found. Nothing to fix.');
+    console.log('✓ No posts with missing publishedAt or category found. Nothing to fix.');
     return;
   }
 
-  console.log(`Found ${badPosts.length} post(s) with missing/invalid publishedAt:\n`);
+  console.log(`Found ${badPosts.length} post(s) needing repair:\n`);
 
   for (const post of badPosts) {
-    const fallback = new Date(post.created_at).toISOString();
-    console.log(`  Patching: ${post.data.slug}`);
-    console.log(`    publishedAt: ${JSON.stringify(post.data.publishedAt)} → ${fallback}`);
+    const fields = {};
+    if (!post.data.publishedAt || isNaN(new Date(post.data.publishedAt).getTime())) {
+      fields.publishedAt = new Date(post.created_at).toISOString();
+    }
+    if (!post.data.category) {
+      fields.category = guessCategory(post.data.slug);
+    }
 
-    const res = await patchPost(post.id, fallback);
+    console.log(`  Patching: ${post.data.slug}`);
+    Object.entries(fields).forEach(([k, v]) =>
+      console.log(`    ${k}: ${JSON.stringify(post.data[k])} → ${JSON.stringify(v)}`)
+    );
+
+    const res = await patchPost(post.id, fields);
     if (res.ok) {
       console.log(`    ✓ Updated`);
     } else {
