@@ -239,20 +239,28 @@ const formatDate = (dateStr: string) => {
         currentTopic = topic;
         currentTag = tag;
 
-        // Update active states
+        const normalizedTopic = topic.toLowerCase();
+
+        // Update active states. Header nav links use broad topics ("RV",
+        // "Ebike", "Battery") while the buttons here use full categories
+        // ("RV Batteries", "Ebike Batteries"), so match by containment.
         topicButtons.forEach((btn) => {
-            const btnTopic = btn.getAttribute("data-topic");
-            if (btnTopic === topic) {
-                btn.classList.add("active");
-            } else {
-                btn.classList.remove("active");
-            }
+            const btnTopic = btn.getAttribute("data-topic") || "";
+            const isActive =
+                btnTopic === topic ||
+                (normalizedTopic !== "all" &&
+                    btnTopic.toLowerCase().includes(normalizedTopic));
+            btn.classList.toggle("active", isActive);
         });
 
-        // Filter items
+        // Filter items by containment too, so a broad topic matches every
+        // category that contains it instead of rendering an empty grid.
         filteredItems = Array.from(archiveItems).filter((item) => {
+            const itemTopic = (
+                item.getAttribute("data-topic") || ""
+            ).toLowerCase();
             const matchesTopic =
-                topic === "all" || item.getAttribute("data-topic") === topic;
+                normalizedTopic === "all" || itemTopic.includes(normalizedTopic);
 
             if (tag) {
                 const itemTags =
