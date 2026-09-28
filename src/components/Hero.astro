@@ -1,9 +1,9 @@
 ---
-import { getBlogPosts } from "../lib/sonicjs";
+import { getBlogPosts, parsePublishDate } from "../lib/posts";
 
 const allPosts = await getBlogPosts();
 const latestPost = allPosts.sort(
-    (a, b) => new Date(b.data.publishedAt).valueOf() - new Date(a.data.publishedAt).valueOf(),
+    (a, b) => parsePublishDate(b.data.publishedAt).valueOf() - parsePublishDate(a.data.publishedAt).valueOf(),
 )[0];
 ---
 

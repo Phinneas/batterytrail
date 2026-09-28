@@ -1,0 +1,15 @@
+# Provenance: Solid-State Battery Electrolytes
+
+- **Date:** 2026-08-12
+- **Rounds:** 1 evidence-gathering round (4 parallel researcher subagents: materials, benchmarks, industry, challenges) + 1 verifier pass + 1 reviewer pass + 1 lead fix/verification pass
+- **Sources consulted:** ~323 raw source entries across the four research files (materials ~76, benchmarks ~53, industry 139, challenges ~55)
+- **Sources accepted:** 226 unique URLs cited in the final brief (deduplicated from the research files; every URL liveness-checked on 2026-08-13 — 144 HTTP 200, 82 bot-blocked but confirmed live via DOI/Crossref/search)
+- **Sources rejected:** 1 (industry research file source #132, Fuxin Industrial aggregator — low-quality, dropped); several claims flagged unverified and not propagated as fact (see Caveats section): 32 mS/cm sulfide composition (review-sourced, primary unverified), 0.15–0.45 S/cm Li3InCl6 (single-source, implausible), WeLion capacity figures (self-reported), Hyundai pilot-line status (industry-reported, unconfirmed), BNEF dedicated solid-state forecast (not accessible)
+- **Verification:** PASS WITH NOTES
+  - Reviewer pass: 0 FATAL / 5 MAJOR / 10 MINOR.
+  - All 5 MAJOR fixed and verified on disk via `grep` (old strings removed, new strings present): (1) LLZO "2.9 V" figure resolved via Han et al. 2016 [11] and reconciled with JACS Au [65] and observed 4.3 V [26]; (2) passenger-car scope qualifier added + Blue Solutions LMP bus exception; (3) negative claims ("no company sells", GM "no program") reframed as survey inferences; (4) Krauskopf page range corrected to 15782–15788 (was wrongly 5049–5055, duplicating Doux); (5) BYD $70/kWh flagged single-source/low-medium confidence.
+  - 9 MINORs fixed (W6–W9, W11–W15) including citation-grouping corrections, LGPS window harmonization, table citation splits, NIO attribution, forecast-scope caveat, single-source notes. 1 MINOR (W10, review date 2025 vs 2026) accepted as-is with a note.
+  - Notes/limitations: PDF full-text parsing was blocked by workflow policy (claims rest on abstracts, metadata, HTML, press releases, web snippets; PDF-only items cited by URL and marked `blocked: pdf parsing` in research files); bibliographic coordinates were spot-checked (1 error found, fixed); several 2026 company dates rest on secondary trade press (medium confidence); industry status current only to ~2026-08-12.
+- **Plan:** outputs/.plans/solid-state-battery-electrolytes.md
+- **Research files:** outputs/.drafts/solid-state-battery-electrolytes-research-materials.md, -research-benchmarks.md, -research-industry.md, -research-challenges.md, -research-direct.md (not used — subagent mode), outputs/.drafts/solid-state-battery-electrolytes-verification.md
+- **Blocked capabilities:** `memory_remember` (plan persistence to memory) not visible in this session's tool set; PDF full-text parsing (policy-blocked, not tool-blocked); BNEF dedicated solid-state forecast page not accessible; several publisher pages bot-blocked (403) — all confirmed live via DOI/search.

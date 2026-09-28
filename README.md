@@ -6,6 +6,21 @@
 
 DevBlog is a high-performance, premium tech blog built for deep dives into software architecture, ethical hacking, and AI. It features a futuristic dark aesthetic, interactive guest features, and a robust authentication system.
 
+## ⚠️ Content Pipeline (BatteryTrail)
+
+Posts are sourced at build time from local Markdown files in `src/content/posts/`,
+loaded by `src/lib/posts.ts`.
+
+Each post is a single Markdown file with YAML frontmatter (`title`, `slug`,
+`excerpt`, `featuredImage`, `author`, `publishedAt`, `status`, `category`, `tags`,
+`featured`, `readTime`). The blog roll is generated automatically from this
+directory.
+
+The data layer normalizes every post before rendering:
+
+- Empty/invalid `publishedAt` dates are backfilled from the post's timestamps (this prevents "Invalid Date" on live pages).
+- `featured` defaults to `false` when the field is missing.
+
 ## 🛠️ Tech Stack
 
 ![Astro](https://img.shields.io/badge/Astro-BC52EE?style=for-the-badge&logo=astro&logoColor=white)

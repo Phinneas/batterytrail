@@ -1,15 +1,19 @@
 ---
-import { getBlogPosts } from "../lib/sonicjs";
+import { getBlogPosts, parsePublishDate } from "../lib/posts";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import ArchiveCard from "../components/ArchiveCard.astro";
 
-const allPosts = await getBlogPosts();
+const allPosts = (await getBlogPosts()).sort(
+    (a, b) =>
+        parsePublishDate(b.data.publishedAt).valueOf() -
+        parsePublishDate(a.data.publishedAt).valueOf(),
+);
 const topics = [...new Set(allPosts.map((post) => post.data.category))];
 
 const formatDate = (dateStr: string) => {
-    return new Date(dateStr).toLocaleDateString("en-US", {
+    return parsePublishDate(dateStr).toLocaleDateString("en-US", {
         year: "numeric",
         month: "short",
         day: "numeric",
@@ -32,8 +36,9 @@ const formatDate = (dateStr: string) => {
                 <p
                     class="text-text-muted text-lg font-normal leading-normal max-w-2xl"
                 >
-                    Explore the latest insights in programming, cybersecurity,
-                    data science, and AI. Stay ahead of the curve.
+                    Explore in-depth guides, comparisons, and tips for RV
+                    batteries, ebike power systems, and lithium battery
+                    technology.
                 </p>
             </div>
 
@@ -85,7 +90,7 @@ const formatDate = (dateStr: string) => {
                         <div
                             class="archive-item"
                             data-topic={post.data.category}
-                            data-date={new Date(post.data.publishedAt).getTime()}
+                            data-date={parsePublishDate(post.data.publishedAt).getTime()}
                             data-tags={
                                 typeof post.data.tags === 'string'
                                     ? post.data.tags.toLowerCase()

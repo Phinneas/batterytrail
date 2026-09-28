@@ -1,0 +1,74 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+    title="About | BatteryTrail"
+    description="BatteryTrail is an independent guide to RV batteries, ebike batteries, and lithium battery technology. Learn who runs it and why it exists."
+>
+    <Header />
+
+    <main class="flex-grow w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-10 border-b border-[#224249] pb-8">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-[1.15]">
+                About BatteryTrail
+            </h1>
+        </div>
+
+        <div class="prose prose-lg dark:prose-invert max-w-none prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
+            <p>
+                BatteryTrail is an independent publication for people who power
+                their adventures with batteries. We publish in-depth guides,
+                comparisons, and practical tips covering RV batteries, ebike power
+                systems, and lithium battery technology — the things you actually
+                need to know to keep your rig running and your rides rolling.
+            </p>
+
+            <h2>What We Cover</h2>
+            <ul>
+                <li>
+                    <strong>RV batteries</strong> — lithium upgrades, battery bank
+                    sizing, charging, winter care, and brand comparisons.
+                </li>
+                <li>
+                    <strong>Ebike batteries</strong> — range, maintenance, charging
+                    habits, replacement, and buying guides.
+                </li>
+                <li>
+                    <strong>Lithium battery technology</strong> — LiFePO4
+                    chemistry, battery management systems, safety, and
+                    certifications.
+                </li>
+            </ul>
+
+            <h2>Why We Exist</h2>
+            <p>
+                Battery buying advice is crowded with marketing and stale
+                information. BatteryTrail exists to cut through it — comparing
+                products on the numbers that matter (cycle life, cost per cycle,
+                weight, warranty, and real-world performance) so you can make a
+                confident decision without weeks of research.
+            </p>
+
+            <h2>Who Runs It</h2>
+            <p>
+                BatteryTrail is written and operated by
+                <strong>Chester Beard</strong>. Our recommendations are based on
+                manufacturer specifications, published testing, and hands-on use.
+                Where we earn a commission through affiliate links, it never
+                changes the price you pay or the honesty of our comparisons.
+            </p>
+
+            <h2>How to Reach Us</h2>
+            <p>
+                Questions, corrections, or ideas for a guide we should write?
+                Contact us at
+                <a href="mailto:chesterbeard@salishseaconsulting.com">chesterbeard@salishseaconsulting.com</a>.
+            </p>
+        </div>
+    </main>
+
+    <Footer />
+</Layout>

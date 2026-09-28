@@ -34,10 +34,10 @@ Typical loads for a couple in a travel trailer:
 | LED lights | 20W | 5 | 100 |
 | Roof/vent fan | 30W | 8 | 240 |
 | Phone and device charging | 20W | 3 | 60 |
-| Water pump, misc. | — | — | 100 |
+| Water pump, misc. | varies | varies | 100 |
 | **Daily total** | | | **980 Wh** |
 
-Note the fridge line. A 40W compressor fridge doesn't draw 40W for 24 hours — it cycles, typically running 40–60% of the time. Multiplying 40W × 24 hours gives 960Wh and overstates the load by roughly double. This is the single most common mistake in RV bank sizing.
+Note the fridge line. A 40W compressor fridge doesn't draw 40W for 24 hours. It cycles, typically running 40–60% of the time. Multiplying 40W × 24 hours gives 960Wh and overstates the load by roughly double. This is the single most common mistake in RV bank sizing.
 
 Now size for two days on LiFePO4:
 
@@ -51,9 +51,9 @@ Same loads, same two days, AGM at 50% depth of discharge:
 
 **(980 Wh × 2 days) ÷ 0.5 = 3,920 Wh ÷ 12V = 327Ah**
 
-You need about **60% more AGM capacity** for the same usable power — and that's before weight. A 327Ah AGM bank runs roughly 200 lbs across three or four Group 31 batteries. The equivalent 200Ah LiFePO4 bank is about 50 lbs in two.
+You need about **60% more AGM capacity** for the same usable power, and that's before weight. A 327Ah AGM bank runs roughly 200 lbs across three or four Group 31 batteries. The equivalent 200Ah LiFePO4 bank is about 50 lbs in two.
 
-Add cycle life to the comparison and the case gets harder to argue with. AGM gives 200–500 cycles; LiFePO4 gives 3,000–6,000. For any regular boondocking use, LiFePO4 is the better value despite the higher sticker price. AGM still makes sense if you camp on shore power most trips and only occasionally go off-grid.
+Add cycle life to the comparison and the case gets harder to argue with. AGM gives 300 to 700 cycles at 50% DoD; LiFePO4 gives 3,000 to 5,000 at 80% DoD. For any regular boondocking use, LiFePO4 is the better value despite the higher sticker price. AGM still makes sense if you camp on shore power most trips and only occasionally go off-grid.
 
 ## Common Appliance Watt-Hour Reference
 
@@ -72,6 +72,4 @@ Daily consumption for typical RV loads:
 | Induction cooktop | 400–800 per meal |
 | Water pump | 30–80 |
 
-Two entries deserve attention. **Starlink** alone can double a modest power budget — size for it explicitly if you work on the road. **A residential fridge on an inverter** consumes two to three times a 12V compressor fridge and is the most common reason a bank that looked adequate on paper dies overnight.
-
-If you're building the bank from multiple batteries, the [series vs parallel wiring guide](/posts/wire-multiple-rv-batteries) covers doing it without creating imbalance. For pairing the bank with charging, see [setting up solar charging for RV batteries](/posts/solar-charging-rv-batteries).
+Two entries deserve attention. **Starlink** alone can double a modest power budget. Size for it explicitly if you work on the road. **A residential fridge on an inverter** consumes two to three times a 12V compressor fridge and is the most common reason a bank that looked adequate on paper dies overnight.

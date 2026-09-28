@@ -14,7 +14,6 @@ export default defineConfig({
   trailingSlash: 'never',
   site: 'https://www.batterytrail.com',
   image: {
-    domains: ['pub-sonicjs-media-dev.r2.dev'],
     remotePatterns: [{ protocol: 'https' }],
   },
 });

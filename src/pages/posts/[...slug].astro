@@ -1,5 +1,5 @@
 ---
-import { getBlogPosts, getBlogPostBySlug, parseTags, type BlogPost } from "../../lib/sonicjs";
+import { getBlogPosts, getBlogPostBySlug, parseTags, parsePublishDate, type BlogPost } from "../../lib/posts";
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../components/Header.astro";
 import Footer from "../../components/Footer.astro";
@@ -55,7 +55,7 @@ if (finalRelatedPosts.length < 3) {
 
 const formattedRelatedPosts = finalRelatedPosts.map((p) => {
     const _rd = p.data.publishedAt;
-    const _d = (_rd && !isNaN(new Date(_rd).getTime())) ? new Date(_rd) : new Date(p.created_at);
+    const _d = (_rd && !isNaN(parsePublishDate(_rd).getTime())) ? parsePublishDate(_rd) : new Date(p.created_at);
     return {
     title: p.data.title,
     date: _d.toLocaleDateString("en-US", {
@@ -84,8 +84,8 @@ while ((match = headingRegex.exec(post.data.content)) !== null) {
 // Guard: if publishedAt is missing/invalid (can happen when a post is edited
 // through the CMS UI without re-entering the date), fall back to created_at.
 const _rawDate = post.data.publishedAt;
-const pubDate = (_rawDate && !isNaN(new Date(_rawDate).getTime()))
-  ? new Date(_rawDate)
+const pubDate = (_rawDate && !isNaN(parsePublishDate(_rawDate).getTime()))
+  ? parsePublishDate(_rawDate)
   : new Date(post.created_at);
 
 const formatDate = (date: Date) => {
@@ -115,7 +115,7 @@ const formatDate = (date: Date) => {
     <script type="application/ld+json" set:html={JSON.stringify({
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": post.data.title,
+        "headline": post.data.headline || post.data.title,
         "description": post.data.excerpt,
         "image": post.data.featuredImage,
         "datePublished": pubDate.toISOString(),
@@ -162,7 +162,7 @@ const formatDate = (date: Date) => {
                         <h1
                             class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.15] mb-6"
                         >
-                            {post.data.title}
+                            {post.data.headline || post.data.title}
                         </h1>
 
                         <div

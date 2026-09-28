@@ -1,5 +1,5 @@
 ---
-import { getBlogPosts, parseTags } from "../lib/sonicjs";
+import { getBlogPosts, parseTags } from "../lib/posts";
 
 const allPosts = await getBlogPosts();
 const searchablePosts = allPosts.map((post) => ({
@@ -57,6 +57,14 @@ const searchablePosts = allPosts.map((post) => ({
                 <a
                     class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
                     href="/archive">All Posts</a
+                >
+                <a
+                    class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
+                    href="/about">About</a
+                >
+                <a
+                    class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
+                    href="/contact">Contact</a
                 >
             </nav>
 
@@ -137,6 +145,14 @@ const searchablePosts = allPosts.map((post) => ({
             <a
                 class="text-slate-300 hover:text-primary text-lg font-bold py-2 border-b border-white/5"
                 href="/archive">All Posts</a
+            >
+            <a
+                class="text-slate-300 hover:text-primary text-lg font-bold py-2 border-b border-white/5"
+                href="/about">About</a
+            >
+            <a
+                class="text-slate-300 hover:text-primary text-lg font-bold py-2 border-b border-white/5"
+                href="/contact">Contact</a
             >
         </nav>
     </div>

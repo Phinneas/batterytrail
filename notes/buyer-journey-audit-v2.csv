@@ -1,0 +1,70 @@
+slug,title,category,in_repo,buyer_journey_stage,reasoning_mode,retrofit_status,content_drift,notes
+10-best-rv-batteries-under-500,"10 Best RV Batteries Under $500",RV Batteries,cms,Selection,Minimal,Retrofit needed,,near-duplicate of best-rv-batteries-under-500-dollars
+100ah-rv-battery,"100Ah RV Battery Guide",RV Batteries,cms,Exploration,High,Retrofit needed,,
+12v-vs-24v-rv-batteries,"12V vs 24V RV Batteries",RV Batteries,cms,Comparison,Minimal,Retrofit needed,,near-duplicate of 12v-vs-24v-rv-battery-systems
+12v-vs-24v-rv-battery-systems,"12V vs 24V RV Battery Systems",RV Batteries,cms,Comparison,Minimal,Retrofit needed,,near-duplicate of 12v-vs-24v-rv-batteries
+48v-vs-52v-ebike-batteries,"What Is the Difference Between 48V and 52V Ebike Batteries?",Ebike Batteries,md,Comparison,Minimal,Retrofit needed,,light: add spec table
+9-best-electric-bike-trailers,"9 Best Electric Bike Trailers",Gear (off-topic),cms,Selection,Minimal,Wrong stage (N/A),yes,content drift: trailers
+agm-vs-lifepo4-vs-flooded,"What Type of RV Battery Lasts the Longest? (LiFePO4 vs AGM vs Flooded)",RV Batteries,md,Exploration,High,Retrofit needed,,light: add spec table + FAQ
+battle-born-batteries-spec-sheet,"Battle Born Batteries Complete Spec Sheet (100Ah, 270Ah, GC3)",RV Batteries,md,Validation,High,Already optimized,,
+battleborn-vs-renogy,"Battle Born vs Renogy",RV Batteries,md,Comparison,Minimal,Already optimized,,has 9-dimension spec comparison + FAQ
+best-100ah-rv-batteries,"Best 100Ah RV Batteries",RV Batteries,cms,Selection,Minimal,Retrofit needed,,
+best-2000w-ebike-battery-kits,"Best 2000W Ebike Battery Kits",Ebike Batteries,cms,Selection,Minimal,Retrofit needed,,
+best-ebike-carriers-for-your-rv,"Best Ebike Carriers for Your RV",Gear (off-topic),cms,Selection,Minimal,Wrong stage (N/A),yes,content drift: ebike carriers
+best-folding-ebikes-for-rv,"Best Folding Ebikes for RV",Gear (off-topic),cms,Selection,Minimal,Wrong stage (N/A),yes,content drift: folding ebikes
+best-lifepo4-batteries,"Best LiFePO4 Batteries for RV in 2025: Complete Buyer's Guide",RV Batteries,md,Selection,Minimal,Already optimized,,has master comparison table
+best-lithium-batteries-for-rv-boondocking,"Best Lithium Batteries for RV Boondocking",RV Batteries,cms,Selection,Minimal,Retrofit needed,,overlaps best-rv-batteries-for-boondocking
+best-lithium-ion-rv-batteries,"Best Lithium-Ion RV Batteries",RV Batteries,cms,Selection,Minimal,Retrofit needed,,overlaps best-rv-batteries-for-boondocking
+best-rv-batteries-for-boondocking,"Best RV Batteries for Boondocking",RV Batteries,cms,Selection,Minimal,Retrofit needed,,
+best-rv-batteries-under-500-dollars,"5 Best RV Batteries Under $500",RV Batteries,md,Selection,Minimal,Already optimized,,has quick comparison + cost/cycle + FAQ
+best-starter-e-bikes-for-beginners,"Best Starter E-Bikes for Beginners",Gear (off-topic),cms,Selection,Minimal,Wrong stage (N/A),yes,content drift: starter ebikes
+boondocking-with-e-bikes,"Boondocking with E-Bikes",Borderline,cms,Exploration,High,Retrofit needed,review,review: RV+ebike lifestyle; not battery-specific
+cart-batteries-in-rvstion,"Golf Cart Batteries in an RV",Borderline,cms,Exploration,High,Retrofit needed,review,review: golf-cart battery niche; off-core vertical
+connect-two-12v-rv-batteries,"How to Connect Two 12V RV Batteries",RV Batteries,cms,Exploration,High,Retrofit needed,,
+cross-country-ebikes,"Cross-Country Ebikes",Gear (off-topic),cms,Exploration,High,Wrong stage (N/A),yes,content drift: ebike touring
+e-bike-vs-e-scooter,"E-Bike vs E-Scooter",Gear (off-topic),cms,Comparison,Minimal,Wrong stage (N/A),yes,content drift: e-scooter
+ebike-battery-connector-types,"Ebike Battery Connector Types",Ebike Batteries,cms,Exploration,High,Retrofit needed,,
+ebike-battery-not-charging,"Ebike Battery Not Charging",Ebike Batteries,cms,Problem,High,Retrofit needed,,
+ebike-battery-replacement-cost-guide,"Ebike Battery Replacement Cost Guide",Ebike Batteries,cms,Selection,Minimal,Retrofit needed,,
+ebike-carriers-for-rv-rack,"Ebike Carriers for RV Rack",Gear (off-topic),cms,Selection,Minimal,Wrong stage (N/A),yes,content drift: ebike carriers
+ebike-losing-range,"Why Is My Ebike Battery Losing Range?",Ebike Batteries,md,Problem,High,Already optimized,,near-duplicate of why-ebike-battery-losing-range
+electric-bike-vs-standard-bicycle-pedaling,"Electric Bike vs Standard Bicycle Pedaling",Gear (off-topic),cms,Comparison,Minimal,Wrong stage (N/A),yes,content drift: pedaling; not battery
+guide-to-charge-your-rv-battery,"Guide to Charge Your RV Battery",RV Batteries,cms,Exploration,High,Retrofit needed,,
+how-to-store-ebike-batteries,"How Do I Store My Ebike Battery Long Term?",Ebike Batteries,md,Exploration,High,Already optimized,,
+how-to-test-ebike-battery-health,"How to Test Ebike Battery Health",Ebike Batteries,cms,Problem,High,Retrofit needed,,overlaps test-ebike-battery-health-without-tools
+hybrid-rv-battery-setup,"Hybrid RV Battery Setup",RV Batteries,cms,Exploration,High,Retrofit needed,,
+lithium-battery-warranty-comparison-rv,"Lithium Battery Warranty Comparison (RV)",RV Batteries,cms,Comparison,Minimal,Retrofit needed,,
+lithium-for-your-rv,"Lithium for Your RV",RV Batteries,cms,Exploration,High,Retrofit needed,,
+lithium-rv-batteries,"Lithium RV Batteries",RV Batteries,cms,Exploration,High,Retrofit needed,,
+litime-vs-battle-born-batteries,"LiTime vs Battle Born Batteries Comparison",RV Batteries,md,Comparison,Minimal,Already optimized,,has specs + FAQ
+long-range-ebike-battery,"Long-Range Ebike Battery",Ebike Batteries,cms,Selection,Minimal,Retrofit needed,,
+motorhome-battery-guide,"Motorhome Battery Guide",RV Batteries,cms,Exploration,High,Retrofit needed,,
+offroad-ebike-battery-protection,"Off-Road Ebike Battery Protection",Ebike Batteries,cms,Exploration,High,Retrofit needed,,
+overnight-charging-ebike,"Can I Leave My Ebike Battery Charging Overnight?",Ebike Batteries,md,Problem,High,Already optimized,,safety angle; has FDNY/UL 2849 refs
+quietkat-vs-rad-power-battery,"QuietKat vs Rad Power Battery",Ebike Batteries,cms,Comparison,Minimal,Retrofit needed,,
+rv-battery-bank-sizing-calculator,"RV Battery Bank Sizing Calculator",RV Batteries,cms,Exploration,High,Retrofit needed,,
+rv-battery-bank-undersized,"5 Signs Your RV Battery Bank Is Undersized for the Way You Camp",RV Batteries,md,Problem,High,Already optimized,,
+rv-battery-dies-overnight,"Why Your RV Battery Dies Overnight (And What's Actually Causing It)",RV Batteries,md,Problem,High,Already optimized,,
+rv-battery-in-winter,"RV Battery in Winter",RV Batteries,cms,Problem,High,Retrofit needed,,
+rv-battery-monitor-installation,"RV Battery Monitor Installation",RV Batteries,cms,Exploration,High,Retrofit needed,,
+rv-battery-monitoring-system,"RV Battery Monitoring System",RV Batteries,cms,Exploration,High,Retrofit needed,,
+rv-battery-not-holding-charge,"RV Battery Not Holding Charge",RV Batteries,cms,Problem,High,Retrofit needed,,
+rv-battery-voltage,"RV Battery Voltage",RV Batteries,cms,Exploration,High,Retrofit needed,,
+rv-dual-battery-setup,"RV Dual Battery Setup",RV Batteries,cms,Exploration,High,Retrofit needed,,
+rv-ebike-charging-guide,"RV Ebike Charging Guide",Ebike Batteries,cms,Exploration,High,Retrofit needed,,overlaps rv-ebike-charging-solar
+rv-ebike-charging-solar,"RV Ebike Charging with Solar",Ebike Batteries,cms,Exploration,High,Retrofit needed,,overlaps rv-ebike-charging-guide
+rv-smart-bluetooth-batteries,"RV Smart Bluetooth Batteries",RV Batteries,cms,Exploration,High,Retrofit needed,,
+rv-solar-battery-setup,"RV Solar Battery Setup",RV Batteries,cms,Exploration,High,Retrofit needed,,
+single-battery-ebike-vs-dual-battery-ebike,"Single Battery vs Dual Battery Ebike",Ebike Batteries,cms,Comparison,Minimal,Retrofit needed,,
+solar-charging-rv-batteries,"Solar Charging RV Batteries",RV Batteries,cms,Exploration,High,Retrofit needed,,
+test-ebike-battery-health-without-tools,"Test Ebike Battery Health Without Tools",Ebike Batteries,cms,Problem,High,Retrofit needed,,overlaps how-to-test-ebike-battery-health
+top-10-ebike-batteries-for-senior-riders,"Top 10 Ebike Batteries for Senior Riders",Ebike Batteries,cms,Selection,Minimal,Retrofit needed,,
+trojan-t-105-vs-lithium-batteries,"Trojan T-105 vs Lithium Batteries",RV Batteries,cms,Comparison,Minimal,Retrofit needed,,
+waterproof-ebike-battery-cases,"Waterproof Ebike Battery Cases",Ebike Batteries,cms,Selection,Minimal,Retrofit needed,,
+what-causes-ebike-battery-degradation,"What Causes Ebike Battery Degradation? (And How to Slow It Down)",Ebike Batteries,md,Exploration,High,Already optimized,,
+when-does-ebike-battery-need-replacing,"How to Know When Your Ebike Battery Needs Replacing vs. Recalibrating",Ebike Batteries,md,Problem,High,Already optimized,,
+when-to-buy-discounted-ebike-batteries,"When to Buy Discounted Ebike Batteries",Ebike Batteries,cms,Selection,Minimal,Retrofit needed,,
+which-is-best-for-your-rv-the-renology-or-goal-zero-rv-batteries,"Renogy or Goal Zero for Your RV",RV Batteries,cms,Comparison,Minimal,Retrofit needed,,
+why-ebike-battery-losing-range,"Why Your Ebike Battery Range Is Getting Worse (It's Not What You Think)",Ebike Batteries,md,Problem,High,Already optimized,,near-duplicate of ebike-losing-range
+why-your-ebike-battery-wont-charge,"Why Your Ebike Battery Won't Charge",Ebike Batteries,cms,Problem,High,Retrofit needed,,near-duplicate of ebike-battery-not-charging
+wire-multiple-rv-batteries,"How to Wire Multiple RV Batteries",RV Batteries,cms,Exploration,High,Retrofit needed,,

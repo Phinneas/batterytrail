@@ -1,0 +1,53 @@
+==============================================================================
+1. WATER PER POUND OF BEEF (boneless)
+==============================================================================
+  Global avg (Water Footprint Network 2012; 15,415 L/kg)         1,847 gal/lb
+  Popular '1,800 gal' figure (watercalculator.org)               1,800 gal/lb
+  US avg (K-State BCI; 1,675 gal)                                1,675 gal/lb
+  USDA lifecycle assessment (2023; 308 gal)                        308 gal/lb
+  Blue-water only, global avg (~550 L/kg)                           66 gal/lb
+
+==============================================================================
+2. WATER PER YEAR OF AI USE (gallons/year)
+==============================================================================
+  Tier                                              light  moderate     heavy
+  OpenAI official (cooling only; 0.000085 gal/q)       0.2       0.9       3.1
+  Independent cooling-only low (1.5 mL/q)             0.7       4.3      14.5
+  Independent cooling-only mid (2.75 mL/q)            1.3       8.0      26.5
+  Independent cooling-only high (4 mL/q)              1.9      11.6      38.6
+  Full-chain GPT-3 low (Li et al.; 500 mL per 70 q)       3.4      20.7      68.9
+  Full-chain GPT-3 high (Li et al.; 500 mL per 20 q)      12.1      72.3     241.1
+  GPT-4 conservative full-chain (100 mL/q)           48.2     289.3     964.2
+  Pessimistic full-chain, email task (519 mL/task)     250.2   1,501.3   5,004.3
+
+==============================================================================
+3. ONE POUND OF BEEF (~1,847 gal) EXPRESSED IN YEARS OF AI USE (moderate, 30 q/day)
+==============================================================================
+  OpenAI official (cooling only; 0.000085 gal/q) 1 lb beef ~=    1,984.6 years of AI
+  Independent cooling-only low (1.5 mL/q)       1 lb beef ~=      425.7 years of AI
+  Independent cooling-only mid (2.75 mL/q)      1 lb beef ~=      232.2 years of AI
+  Independent cooling-only high (4 mL/q)        1 lb beef ~=      159.6 years of AI
+  Full-chain GPT-3 low (Li et al.; 500 mL per 70 q) 1 lb beef ~=       89.4 years of AI
+  Full-chain GPT-3 high (Li et al.; 500 mL per 20 q) 1 lb beef ~=       25.5 years of AI
+  GPT-4 conservative full-chain (100 mL/q)      1 lb beef ~=        6.4 years of AI
+  Pessimistic full-chain, email task (519 mL/task) 1 lb beef ~=        1.2 years of AI
+
+==============================================================================
+4. FAIRNESS CHECK: BEEF BLUE-WATER-ONLY (~66 gal/lb) VS AI (30 q/day)
+==============================================================================
+  OpenAI official (cooling only; 0.000085 gal/q) 1 lb beef (blue only) ~=       70.8 years of AI
+  Independent cooling-only low (1.5 mL/q)       1 lb beef (blue only) ~=       15.2 years of AI
+  Independent cooling-only mid (2.75 mL/q)      1 lb beef (blue only) ~=        8.3 years of AI
+  Independent cooling-only high (4 mL/q)        1 lb beef (blue only) ~=        5.7 years of AI
+  Full-chain GPT-3 low (Li et al.; 500 mL per 70 q) 1 lb beef (blue only) ~=        3.2 years of AI
+  Full-chain GPT-3 high (Li et al.; 500 mL per 20 q) 1 lb beef (blue only) ~=        0.9 years of AI
+  GPT-4 conservative full-chain (100 mL/q)      1 lb beef (blue only) ~=        0.2 years of AI
+  Pessimistic full-chain, email task (519 mL/task) 1 lb beef (blue only) ~=        0.0 years of AI
+
+==============================================================================
+5. CONTEXT NUMBERS
+==============================================================================
+  GPT-3 training, direct evaporation: 184,920 gal ~= 100 lb of beef
+  GPT-3 training, total footprint:    1,426,529 gal ~= 772 lb of beef
+  Global AI data-center water (Axis Intelligence 2026 est.): 264,000,000,000 gal ~= 142,924,864 lb of beef-equivalent
+  ...~= 0.54% of one year of US beef production by weight-equivalent

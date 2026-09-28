@@ -1,5 +1,5 @@
 import rss from '@astrojs/rss';
-import { getBlogPosts, parseTags } from '../lib/sonicjs';
+import { getBlogPosts, parseTags } from '../lib/posts';
 
 export async function GET(context) {
   const posts = await getBlogPosts();

@@ -1,0 +1,126 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const lastUpdated = new Date().toISOString().slice(0, 10);
+---
+
+<Layout
+    title="Terms of Service | BatteryTrail"
+    description="The terms and conditions governing your use of BatteryTrail, including content disclaimers and affiliate disclosures."
+>
+    <Header />
+
+    <main class="flex-grow w-full max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-10 border-b border-[#224249] pb-8">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-[1.15]">
+                Terms of Service
+            </h1>
+            <p class="mt-4 text-sm font-medium text-text-muted">
+                Last updated: {lastUpdated}
+            </p>
+        </div>
+
+        <div class="prose prose-lg dark:prose-invert max-w-none prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
+            <p>
+                These Terms of Service ("Terms") govern your access to and use of
+                the BatteryTrail website (the "Site"). By accessing or using the
+                Site, you agree to be bound by these Terms. If you do not agree,
+                please do not use the Site.
+            </p>
+
+            <h2>About the Site</h2>
+            <p>
+                BatteryTrail publishes educational and editorial content about
+                batteries and mobile power systems, including RV batteries, ebike
+                batteries, lithium battery technology, and off-grid power. Our
+                content is intended for general informational purposes only.
+            </p>
+
+            <h2>Editorial Standards</h2>
+            <p>
+                We strive to provide accurate, useful, and current information. We
+                research and compare products, and we may update or correct content
+                over time. However, product specifications, prices, availability,
+                and warranties change frequently and are controlled by
+                manufacturers and retailers, not by BatteryTrail.
+            </p>
+
+            <h2>No Warranty and Disclaimer of Liability</h2>
+            <p>
+                THE SITE AND ALL CONTENT ARE PROVIDED ON AN "AS IS" AND "AS
+                AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR
+                IMPLIED. To the fullest extent permitted by law, BatteryTrail
+                disclaims all warranties and will not be liable for any damages
+                arising from your use of, or reliance on, the Site or its content.
+            </p>
+            <p>
+                Battery work can be hazardous. Always follow the manufacturer's
+                instructions and applicable safety codes, and consult a qualified
+                professional for your specific installation. Nothing on this Site
+                constitutes professional electrical, engineering, or safety advice.
+            </p>
+
+            <h2>Affiliate Disclosure</h2>
+            <p>
+                Some links on the Site are affiliate links. If you click an
+                affiliate link and make a purchase, we may earn a commission at no
+                additional cost to you. This helps support the Site and our work.
+                We aim to recommend products based on genuine evaluation, and
+                affiliate relationships do not change the price you pay. For more
+                information, see our
+                <a href="/privacy-policy/">Privacy Policy</a>.
+            </p>
+
+            <h2>Intellectual Property</h2>
+            <p>
+                All content on the Site, including text, graphics, logos, and
+                images, is the property of BatteryTrail or its content suppliers
+                and is protected by applicable copyright and trademark laws. You
+                may view and share our content for personal, non-commercial use
+                with attribution, but you may not reproduce or republish it
+                commercially without our prior written consent.
+            </p>
+
+            <h2>Acceptable Use</h2>
+            <p>
+                You agree not to use the Site in any way that is unlawful, harmful,
+                or that interferes with the Site's operation or other users'
+                enjoyment of it. You may not attempt to gain unauthorized access to
+                the Site or its systems.
+            </p>
+
+            <h2>Third-Party Links</h2>
+            <p>
+                The Site contains links to third-party websites, products, and
+                services. We are not responsible for the content, accuracy, or
+                practices of those third parties. Your dealings with them are
+                solely between you and the third party.
+            </p>
+
+            <h2>Changes to These Terms</h2>
+            <p>
+                We may revise these Terms at any time. The "Last updated" date at
+                the top of this page reflects the most recent revision. Continued
+                use of the Site after changes are posted constitutes acceptance of
+                the revised Terms.
+            </p>
+
+            <h2>Governing Law</h2>
+            <p>
+                These Terms are governed by the laws of the jurisdiction in which
+                BatteryTrail operates, without regard to conflict-of-law
+                principles.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+                Questions about these Terms? Contact us at
+                <a href="mailto:chesterbeard@salishseaconsulting.com">chesterbeard@salishseaconsulting.com</a>.
+            </p>
+        </div>
+    </main>
+
+    <Footer />
+</Layout>
