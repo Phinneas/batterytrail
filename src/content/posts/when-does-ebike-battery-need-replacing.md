@@ -107,4 +107,4 @@ Stop recalibrating and replace the pack if any of these are true:
 
 ---
 
-**Related reading:** If you haven't confirmed that real degradation is what you're dealing with, [What Causes Ebike Battery Degradation](/posts/what-causes-ebike-battery-degradation) covers the four mechanisms, heat, deep discharge, storage voltage, and charge rate, that determine how fast a pack loses capacity, and what a normal decline curve looks like for your cell type. If your range dropped recently and you're not sure why, start with [Why Your Ebike Battery Range Is Getting Worse](/posts/why-ebike-battery-losing-range).
+**Related reading:** If you haven't confirmed that real degradation is what you're dealing with, [What Causes Ebike Battery Degradation](/posts/what-causes-ebike-battery-degradation/) covers the four mechanisms, heat, deep discharge, storage voltage, and charge rate, that determine how fast a pack loses capacity, and what a normal decline curve looks like for your cell type. If your range dropped recently and you're not sure why, start with [Why Your Ebike Battery Range Is Getting Worse](/posts/why-ebike-battery-losing-range/).

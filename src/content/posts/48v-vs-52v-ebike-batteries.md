@@ -71,7 +71,7 @@ Upgrading makes sense if the controller is already rated for it and the rider wa
 
 **Does upgrading to 52V void my bike's warranty?** For most major brands, yes, installing a non-OEM battery at a different voltage than the bike shipped with is typically outside the manufacturer's warranty terms, since it changes the system beyond factory specifications. Check with the specific manufacturer before modifying a bike still under warranty.
 
-**Related reading:** If you're running an upgraded battery harder than the stock setup, [What Causes Ebike Battery Degradation? (And How to Slow It Down)](/posts/what-causes-ebike-battery-degradation) covers the habits that shorten or extend cycle life.
+**Related reading:** If you're running an upgraded battery harder than the stock setup, [What Causes Ebike Battery Degradation? (And How to Slow It Down)](/posts/what-causes-ebike-battery-degradation/) covers the habits that shorten or extend cycle life.
 
 ---
 

@@ -52,4 +52,4 @@ Check the frame, head tube, or battery casing directly for a certification mark 
 | EN 50604-1 | Lithium battery safety within EN 15194 | Required for CE marking since 2023 update |
 | UN 38.3 | Transport safety only | Required for shipping any lithium battery |
 
-For the diagnostic side of battery problems these certifications don't cover, like sudden range loss or charging failures, see the [ebike battery range diagnostic guide](/posts/ebike-losing-range) and the [ebike battery replacement guide](/posts/when-does-ebike-battery-need-replacing).
+For the diagnostic side of battery problems these certifications don't cover, like sudden range loss or charging failures, see the [ebike battery range diagnostic guide](/posts/ebike-losing-range/) and the [ebike battery replacement guide](/posts/when-does-ebike-battery-need-replacing/).

@@ -176,4 +176,4 @@ Flooded lead-acid batteries last 3–5 years with good care, less if regularly d
 
 ## The Bottom Line
 
-Test resting voltage and charging voltage, find your row in the table, and fix the cause, not just the battery. If you've confirmed the charging system is working and the battery still won't hold a charge, these guides take you the rest of the way: [why your RV battery dies overnight](/posts/rv-battery-dies-overnight) and [which RV battery lasts the longest](/posts/agm-vs-lifepo4-vs-flooded).
+Test resting voltage and charging voltage, find your row in the table, and fix the cause, not just the battery. If you've confirmed the charging system is working and the battery still won't hold a charge, these guides take you the rest of the way: [why your RV battery dies overnight](/posts/rv-battery-dies-overnight/) and [which RV battery lasts the longest](/posts/agm-vs-lifepo4-vs-flooded/).

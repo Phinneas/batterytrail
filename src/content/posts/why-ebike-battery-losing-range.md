@@ -58,4 +58,4 @@ If you've ruled out mode, temperature, tires, and charging habits and range is s
 
 If your battery has logged fewer than 500 cycles and the range loss appears only under specific conditions (just in winter, just in Turbo, just lately since you stopped checking tire pressure), the environmental and behavioral causes above are far more likely culprits than a failing pack.
 
-**If the battery itself is the issue:** read [How to Know When Your Ebike Battery Needs Replacing vs. Recalibrating](/posts/when-does-ebike-battery-need-replacing) for voltage testing thresholds, how to check your actual cycle count by brand, and a cost comparison between replacement and repair.
+**If the battery itself is the issue:** read [How to Know When Your Ebike Battery Needs Replacing vs. Recalibrating](/posts/when-does-ebike-battery-need-replacing/) for voltage testing thresholds, how to check your actual cycle count by brand, and a cost comparison between replacement and repair.

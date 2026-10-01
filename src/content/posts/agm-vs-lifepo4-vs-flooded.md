@@ -94,4 +94,4 @@ Over a 10-year period, the AGM owner has replaced their bank at least twice and 
 
 The math shifts somewhat for very occasional campers (fewer than 20 cycles per year), where AGM's lower upfront cost and adequate longevity can make it the sensible choice. But for anyone boondocking regularly, the long-term economics favor lithium significantly.
 
-Chemistry is the foundation, but within each category, build quality, BMS features, and warranty terms vary widely. For a side-by-side look at how specific LiFePO4 options compare on price, cold-weather performance, and warranty coverage, read [Best LiFePO4 Batteries for RV: Compared by Price and Performance](/posts/best-lifepo4-batteries).
+Chemistry is the foundation, but within each category, build quality, BMS features, and warranty terms vary widely. For a side-by-side look at how specific LiFePO4 options compare on price, cold-weather performance, and warranty coverage, read [Best LiFePO4 Batteries for RV: Compared by Price and Performance](/posts/best-lifepo4-batteries/).

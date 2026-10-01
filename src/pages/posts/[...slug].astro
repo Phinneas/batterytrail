@@ -135,7 +135,7 @@ const formatDate = (date: Date) => {
         },
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": new URL(`/posts/${post.data.slug}`, Astro.site).toString()
+            "@id": new URL(`/posts/${post.data.slug}/`, Astro.site).toString()
         },
         ...(tags.length ? {"keywords": tags.join(", ")} : {})
     })} />

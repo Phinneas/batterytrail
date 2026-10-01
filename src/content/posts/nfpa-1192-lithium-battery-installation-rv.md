@@ -44,4 +44,4 @@ If you're a DIY RV owner replacing a battery rather than a manufacturer building
 | NFPA 70 (Article 551) | AC electrical systems in RVs | General electrical safety, not lithium-specific |
 | ANSI/RVIA LV | DC electrical systems in RVs | Lithium batteries must be "listed" (UL 1973, UL 2054) |
 
-For the certification details behind that "listed" requirement, see [RV Battery Safety Certifications Explained](/posts/rv-battery-safety-certifications-explained). If you're sizing a system before you install it, the [battery bank sizing guide](/posts/what-size-battery-bank-do-i-need-for-boondocking) covers the amp-hour math this post doesn't.
+For the certification details behind that "listed" requirement, see [RV Battery Safety Certifications Explained](/posts/rv-battery-safety-certifications-explained/). If you're sizing a system before you install it, the [battery bank sizing guide](/posts/what-size-battery-bank-do-i-need-for-boondocking/) covers the amp-hour math this post doesn't.

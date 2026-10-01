@@ -67,7 +67,7 @@ If you're managing more than one battery, a spare pack, a household with multipl
 
 **Does a battery lose capacity permanently just from being stored, even if never used?** Yes, to some degree. This is calendar aging, distinct from cycle-based wear. A battery stored correctly (40–60% SOC, moderate temperature) ages slowly; a battery stored at 100% in a hot space ages meaningfully faster even with zero miles put on it.
 
-**Related reading:** The calendar-aging mechanism behind these storage rules is covered in depth in [What Causes Ebike Battery Degradation? (And How to Slow It Down)](/posts/what-causes-ebike-battery-degradation).
+**Related reading:** The calendar-aging mechanism behind these storage rules is covered in depth in [What Causes Ebike Battery Degradation? (And How to Slow It Down)](/posts/what-causes-ebike-battery-degradation/).
 
 ---
 

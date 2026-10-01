@@ -13,6 +13,7 @@ interface Props {
 		tags?: string[];
 		slug?: string;
 	};
+	noindex?: boolean;
 }
 
 const {
@@ -20,9 +21,13 @@ const {
 	description = "Expert guides on RV batteries, ebike batteries, and off-grid power systems for adventurers.",
 	image,
 	article,
+	noindex = false,
 } = Astro.props;
 
-const canonicalUrl = new URL(Astro.url.pathname, Astro.site).toString();
+// Canonical URLs always end in a trailing slash to match trailingSlash: 'always'
+// and the URL Cloudflare Pages actually serves (it 308s /foo -> /foo/).
+const canonicalPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonicalUrl = new URL(canonicalPath, Astro.site).toString();
 const ogImage = image || '/images/default-og.png';
 const ogImageUrl = ogImage.startsWith('http') ? ogImage : new URL(ogImage, Astro.site).toString();
 ---
@@ -37,7 +42,7 @@ const ogImageUrl = ogImage.startsWith('http') ? ogImage : new URL(ogImage, Astro
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<meta name="description" content={description} />
-		<link rel="canonical" href={canonicalUrl} />
+		{noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonicalUrl} />}
 
 		<!-- Open Graph -->
 		<meta property="og:type" content={article ? 'article' : 'website'} />

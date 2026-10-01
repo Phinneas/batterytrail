@@ -47,4 +47,4 @@ Two chemistries make sense for an RV house bank.
 
 Whichever you choose, size the bank to your actual loads rather than buying whatever fits the tray. A correctly sized AGM bank beats an undersized lithium one.
 
-For current options and pricing, see the [best LiFePO4 batteries guide](/posts/best-lifepo4-batteries). If you're working to a budget, [best RV batteries under $500](/posts/best-rv-batteries-under-500-dollars) covers both chemistries.
+For current options and pricing, see the [best LiFePO4 batteries guide](/posts/best-lifepo4-batteries/). If you're working to a budget, [best RV batteries under $500](/posts/best-rv-batteries-under-500-dollars/) covers both chemistries.

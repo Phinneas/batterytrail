@@ -38,7 +38,7 @@ Run a quick check: divide your daily watt-hour usage by your bank's amp-hours, t
 
 The practical version of the same test: if the battery reads **below 12.2V (AGM)** or **below 13.0V (LiFePO4)** every morning after a typical night, the bank is undersized for your loads. AGM makes this worse than it looks, because you only get half the rated capacity. A 100Ah AGM gives you 50Ah of usable power, while a 100Ah LiFePO4 gives you 80Ah or more.
 
-For the full sizing formula and a worked example, see [What Size Battery Bank Do I Need for Boondocking?](/posts/what-size-battery-bank-do-i-need-for-boondocking)
+For the full sizing formula and a worked example, see [What Size Battery Bank Do I Need for Boondocking?](/posts/what-size-battery-bank-do-i-need-for-boondocking/)
 
 ## Charging System Not Keeping Up
 
@@ -58,7 +58,7 @@ LiFePO4 rarely fails suddenly. Decline is gradual and shows up as shrinking runt
 
 Age benchmarks: **AGM 4–7 years, LiFePO4 10+ years.**
 
-Full test procedure and thresholds: [How Do I Know When My RV Battery Needs Replacing?](/posts/how-do-i-know-when-my-rv-battery-needs-replacing)
+Full test procedure and thresholds: [How Do I Know When My RV Battery Needs Replacing?](/posts/how-do-i-know-when-my-rv-battery-needs-replacing/)
 
 ## Work the Causes in Order
 

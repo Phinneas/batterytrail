@@ -49,7 +49,7 @@ A 100Ah LiFePO4 holds about 1,280Wh and the BMS lets you take nearly all of it. 
 
 Same label on the case. Double the working energy. This is why a 200Ah lithium bank replaces a 400Ah AGM bank and still weighs less than half as much.
 
-If you are sizing a bank around this, run the numbers before you buy, not after. Our [battery bank sizing guide](/posts/what-size-battery-bank-do-i-need-for-boondocking) walks through it.
+If you are sizing a bank around this, run the numbers before you buy, not after. Our [battery bank sizing guide](/posts/what-size-battery-bank-do-i-need-for-boondocking/) walks through it.
 
 ## What happens to lithium in cold weather
 
@@ -89,10 +89,10 @@ You store the rig outside all winter in a cold climate with no shore power. A no
 
 You plan to sell the rig soon. AGM is familiar to buyers. Lithium reads as a niche modification to most of them.
 
-If none of those describe you, the decision comes down to upfront spend. I went deeper on that tradeoff in our [LiFePO4 vs AGM vs flooded comparison](/posts/agm-vs-lifepo4-vs-flooded).
+If none of those describe you, the decision comes down to upfront spend. I went deeper on that tradeoff in our [LiFePO4 vs AGM vs flooded comparison](/posts/agm-vs-lifepo4-vs-flooded/).
 
 ## The short version
 
 Compare cycle life only at matched depth of discharge. Compare cost only per usable kilowatt-hour. Do both and lithium wins nearly everywhere except cold storage, DIY-only installs, and resale.
 
-Once the chemistry is settled, picking a specific pack is a separate problem. Start with [Best LiFePO4 Batteries for RV](/posts/best-lifepo4-batteries).
+Once the chemistry is settled, picking a specific pack is a separate problem. Start with [Best LiFePO4 Batteries for RV](/posts/best-lifepo4-batteries/).
