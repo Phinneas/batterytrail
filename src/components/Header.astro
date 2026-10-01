@@ -44,27 +44,27 @@ const searchablePosts = allPosts.map((post) => ({
             <nav class="hidden lg:flex space-x-8">
                 <a
                     class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
-                    href="/archive?topic=RV">RV</a
+                    href="/archive/?topic=RV">RV</a
                 >
                 <a
                     class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
-                    href="/archive?topic=Ebike">Ebike</a
+                    href="/archive/?topic=Ebike">Ebike</a
                 >
                 <a
                     class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
-                    href="/archive?topic=Battery">Battery</a
+                    href="/archive/?topic=Battery">Battery</a
                 >
                 <a
                     class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
-                    href="/archive">All Posts</a
+                    href="/archive/">All Posts</a
                 >
                 <a
                     class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
-                    href="/about">About</a
+                    href="/about/">About</a
                 >
                 <a
                     class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
-                    href="/contact">Contact</a
+                    href="/contact/">Contact</a
                 >
             </nav>
 
@@ -132,27 +132,27 @@ const searchablePosts = allPosts.map((post) => ({
         <nav class="flex flex-col space-y-4">
             <a
                 class="text-slate-300 hover:text-primary text-lg font-bold py-2 border-b border-white/5"
-                href="/archive?topic=RV">RV</a
+                href="/archive/?topic=RV">RV</a
             >
             <a
                 class="text-slate-300 hover:text-primary text-lg font-bold py-2 border-b border-white/5"
-                href="/archive?topic=Ebike">Ebike</a
+                href="/archive/?topic=Ebike">Ebike</a
             >
             <a
                 class="text-slate-300 hover:text-primary text-lg font-bold py-2 border-b border-white/5"
-                href="/archive?topic=Battery">Battery</a
+                href="/archive/?topic=Battery">Battery</a
             >
             <a
                 class="text-slate-300 hover:text-primary text-lg font-bold py-2 border-b border-white/5"
-                href="/archive">All Posts</a
+                href="/archive/">All Posts</a
             >
             <a
                 class="text-slate-300 hover:text-primary text-lg font-bold py-2 border-b border-white/5"
-                href="/about">About</a
+                href="/about/">About</a
             >
             <a
                 class="text-slate-300 hover:text-primary text-lg font-bold py-2 border-b border-white/5"
-                href="/contact">Contact</a
+                href="/contact/">Contact</a
             >
         </nav>
     </div>
@@ -293,7 +293,7 @@ const searchablePosts = allPosts.map((post) => ({
         searchResults.innerHTML = results
             .map(
                 (post) => `
-            <a href="/posts/${post.slug}" class="flex flex-col p-4 rounded-xl hover:bg-primary/5 border border-transparent hover:border-primary/20 transition-all group">
+            <a href="/posts/${post.slug}/" class="flex flex-col p-4 rounded-xl hover:bg-primary/5 border border-transparent hover:border-primary/20 transition-all group">
                 <div class="flex items-center justify-between mb-1">
                     <span class="text-xs font-bold text-primary uppercase tracking-widest">${post.category}</span>
                 </div>

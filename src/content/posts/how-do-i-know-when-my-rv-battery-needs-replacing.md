@@ -62,4 +62,4 @@ Lithium packs rarely fail suddenly, and the voltage tests above don't apply. Wat
 
 These are benchmarks, not deadlines. Test before replacing on age alone. Heat and chronic partial charge kill batteries far faster than the calendar does.
 
-For the full lifespan breakdown and what shortens it, see [How Long Should an RV Battery Last?](/posts/how-long-should-an-rv-battery-last)
+For the full lifespan breakdown and what shortens it, see [How Long Should an RV Battery Last?](/posts/how-long-should-an-rv-battery-last/)

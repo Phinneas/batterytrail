@@ -118,4 +118,4 @@ For a simpler **one-night calculation** with AGM:
 
 If your current bank is 200Ah AGM and you're running this load, you're 68Ah short, and that's before accounting for any capacity loss from battery age.
 
-Once you know your bank needs to grow, the next decision is what chemistry to build it with. Read [What Type of RV Battery Lasts the Longest](/posts/agm-vs-lifepo4-vs-flooded) for a full breakdown of AGM vs. lithium vs. flooded lead-acid, cycle life, cost per cycle, weight, and which makes sense for how often you actually camp.
+Once you know your bank needs to grow, the next decision is what chemistry to build it with. Read [What Type of RV Battery Lasts the Longest](/posts/agm-vs-lifepo4-vs-flooded/) for a full breakdown of AGM vs. lithium vs. flooded lead-acid, cycle life, cost per cycle, weight, and which makes sense for how often you actually camp.

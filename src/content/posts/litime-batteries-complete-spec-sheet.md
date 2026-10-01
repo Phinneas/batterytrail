@@ -408,8 +408,8 @@ For warm-weather budget installations, the Classic 100Ah remains the straightfor
 
 ### Related BatteryTrail resources
 
-- [LiTime vs. Battle Born battery comparison](/posts/litime-vs-battle-born-batteries)
-- [Battle Born Batteries Complete Spec Sheet](/posts/battle-born-batteries-spec-sheet)
+- [LiTime vs. Battle Born battery comparison](/posts/litime-vs-battle-born-batteries/)
+- [Battle Born Batteries Complete Spec Sheet](/posts/battle-born-batteries-spec-sheet/)
 
 ### Primary sources
 

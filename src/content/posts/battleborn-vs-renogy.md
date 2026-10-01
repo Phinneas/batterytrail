@@ -206,7 +206,7 @@ Renogy handles warranty claims through their distribution network with a more st
 
 The cost-per-cycle figure is the one worth watching, because it has moved a lot with Renogy's recent price cuts. At current pricing, Battle Born's $899-$949 spread over 3,000-5,000 cycles works out to roughly **$0.19-$0.31 per cycle**. Renogy's $629-$699 Smart Pro spread over its 5,000-cycle rating works out to about **$0.13 per cycle**. That's a far narrower gap than the older "$749-$899 Renogy" figures implied, Battle Born is still the premium option with the longer warranty and UL 1973 listing, but Renogy now delivers a meaningfully lower cost per cycle.
 
-For every Battle Born spec in one place, cold-weather performance, cycle life, BMS cutoff, charger profiles, warranty, and certifications across the 100Ah and 270Ah GC3 lines, see the [Battle Born Batteries Complete Spec Sheet](/posts/battle-born-batteries-spec-sheet).
+For every Battle Born spec in one place, cold-weather performance, cycle life, BMS cutoff, charger profiles, warranty, and certifications across the 100Ah and 270Ah GC3 lines, see the [Battle Born Batteries Complete Spec Sheet](/posts/battle-born-batteries-spec-sheet/).
 
 ## Which Battery Is Right for Your RV?
 

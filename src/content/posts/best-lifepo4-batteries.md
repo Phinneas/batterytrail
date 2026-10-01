@@ -218,7 +218,7 @@ Battle Born commands premium pricing through exceptional phone support. When you
 | Certifications | UL 1973 listed, UN38.3, CE, FCC, RoHS |
 | Cost per cycle | ~$0.19–$0.31 |
 
-For the full Battle Born spec breakdown across the 100Ah and 270Ah GC3 lines, see the [Battle Born Batteries Complete Spec Sheet](/posts/battle-born-batteries-spec-sheet).
+For the full Battle Born spec breakdown across the 100Ah and 270Ah GC3 lines, see the [Battle Born Batteries Complete Spec Sheet](/posts/battle-born-batteries-spec-sheet/).
 
 ---
 

@@ -59,7 +59,7 @@ If you suspect genuine degradation rather than an environmental cause, a basic t
 
 If the range loss is consistent, shows up regardless of conditions, and the battery has logged several hundred cycles or a few years of regular use, it's likely genuine degradation rather than something fixable through riding habits. At that point the more useful question shifts from "why is this happening" to "is 70–80% of original range still enough for how I ride, or is it time to budget for a replacement pack", a judgment call that depends more on your typical route length than on any fixed threshold.
 
-*For a full diagnostic walkthrough of battery-specific degradation causes and how to slow them down, see: [Why Your Ebike Battery Range Is Getting Worse (It's Not What You Think)](/posts/why-ebike-battery-losing-range)*
+*For a full diagnostic walkthrough of battery-specific degradation causes and how to slow them down, see: [Why Your Ebike Battery Range Is Getting Worse (It's Not What You Think)](/posts/why-ebike-battery-losing-range/)*
 
 ## Related Questions
 
@@ -67,7 +67,7 @@ If the range loss is consistent, shows up regardless of conditions, and the batt
 
 **Does letting the battery run all the way to 0% hurt range long-term?** Occasional full discharges aren't damaging on their own, but habitually running to 0% accelerates capacity loss over time (see the charge cycles post), so while it won't explain a sudden range change, a pattern of deep discharges over months can contribute to the gradual kind.
 
-**Related reading:** [What Causes Ebike Battery Degradation? (And How to Slow It Down)](/posts/what-causes-ebike-battery-degradation)
+**Related reading:** [What Causes Ebike Battery Degradation? (And How to Slow It Down)](/posts/what-causes-ebike-battery-degradation/)
 
 ---
 

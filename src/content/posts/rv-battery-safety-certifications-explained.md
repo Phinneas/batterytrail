@@ -54,4 +54,4 @@ Look for the certification mark directly on the battery casing or in the manufac
 | UN 38.3 | Transport safety (altitude, thermal cycling, shock) | Accredited test lab, self-reported summary | All lithium battery shipping |
 | CE marking | EU regulatory compliance declaration | Typically self-certified by manufacturer | Sale into EU market only |
 
-Before buying, cross-reference certification claims against the [AGM vs. LiFePO4 vs. flooded comparison](/posts/agm-vs-lifepo4-vs-flooded) to see how chemistry choice affects which certifications actually apply, and check the [battery bank sizing guide](/posts/what-size-battery-bank-do-i-need-for-boondocking) once you've confirmed a certified battery fits your power needs.
+Before buying, cross-reference certification claims against the [AGM vs. LiFePO4 vs. flooded comparison](/posts/agm-vs-lifepo4-vs-flooded/) to see how chemistry choice affects which certifications actually apply, and check the [battery bank sizing guide](/posts/what-size-battery-bank-do-i-need-for-boondocking/) once you've confirmed a certified battery fits your power needs.

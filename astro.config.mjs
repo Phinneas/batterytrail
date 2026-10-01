@@ -11,7 +11,7 @@ export default defineConfig({
       noExternal: ['turndown'],
     },
   },
-  trailingSlash: 'never',
+  trailingSlash: 'always',
   site: 'https://www.batterytrail.com',
   image: {
     remotePatterns: [{ protocol: 'https' }],

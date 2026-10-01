@@ -47,6 +47,6 @@ Note the trade-off buried in LiTime's ladder: discharging to 60% instead of 100%
 
 Age alone isn't a verdict. A 6-year-old AGM that still passes a load test is a working battery, and a 2-year-old one that's been cooked in a hot bay may already be finished. Test before you replace.
 
-For the specific voltage thresholds, load-test procedure, and LiFePO4 capacity check, see [How Do I Know When My RV Battery Needs Replacing?](/posts/how-do-i-know-when-my-rv-battery-needs-replacing)
+For the specific voltage thresholds, load-test procedure, and LiFePO4 capacity check, see [How Do I Know When My RV Battery Needs Replacing?](/posts/how-do-i-know-when-my-rv-battery-needs-replacing/)
 
-If you're pricing a replacement, the [best LiFePO4 batteries guide](/posts/best-lifepo4-batteries) covers current options.
+If you're pricing a replacement, the [best LiFePO4 batteries guide](/posts/best-lifepo4-batteries/) covers current options.
