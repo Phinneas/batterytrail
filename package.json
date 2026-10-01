@@ -3,7 +3,6 @@
   "type": "module",
   "version": "1.0.0",
   "scripts": {
-    "prebuild": "node scripts/generate-redirects.mjs",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
