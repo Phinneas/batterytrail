@@ -61,7 +61,32 @@ Before the first ride of the season, charge the battery fully and check that it 
 
 If you're managing more than one battery, a spare pack, a household with multiple ebikes, or a small rental or delivery fleet, the same rules apply per battery, but the calendar-reminder habit becomes more important to formalize rather than rely on memory. A simple spreadsheet with storage date and last-checked date per battery scales the 3-month check into something manageable across a dozen packs, and it's worth storing batteries at the same 40–60% target rather than staggering charge levels, since a uniform storage state simplifies both the check-in process and reactivation before the season starts.
 
-## Related Questions
+## FAQ
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I store an ebike battery on the bike itself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's fine for short-term storage, but for anything beyond a few weeks, removing the battery is safer and easier to manage. You avoid any risk of the bike's own electronics drawing a small parasitic current from the pack, and it's simpler to control the storage temperature for a battery indoors than for a whole bike."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a battery lose capacity permanently just from being stored, even if never used?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, to some degree. This is calendar aging, distinct from cycle-based wear. A battery stored correctly (40-60% SOC, moderate temperature) ages slowly; a battery stored at 100% in a hot space ages meaningfully faster even with zero miles put on it."
+      }
+    }
+  ]
+}
+</script>
 
 **Can I store an ebike battery on the bike itself?** It's fine for short-term storage, but for anything beyond a few weeks, removing the battery is safer and easier to manage, you avoid any risk of the bike's own electronics drawing a small parasitic current from the pack, and it's simpler to control the storage temperature for a battery indoors than for a whole bike.
 
