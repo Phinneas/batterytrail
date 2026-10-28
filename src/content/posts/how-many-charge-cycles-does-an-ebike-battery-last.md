@@ -55,7 +55,43 @@ Practically, that means charging after each ride rather than waiting until the b
 
 If your battery is already noticeably degraded - well below the cycle-life figures above for its cell type - the causes and fixes are covered in [What Causes Ebike Battery Degradation?](/posts/what-causes-ebike-battery-degradation/), and [How to Know When Your Ebike Battery Needs Replacing vs. Recalibrating](/posts/when-does-ebike-battery-need-replacing/) covers testing and replacement cost.
 
-## Related Questions
+## FAQ
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many charge cycles does an ebike battery last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A generic lithium-ion ebike battery lasts 500-800 full charge cycles before it drops to 80% of original capacity. A quality LiFePO4 pack lasts 1,000-2,000 cycles. Shimano rates its BT-E8010 STEPS battery at 1,000 charge cycles without significant power loss, and Bosch guarantees its PowerTube batteries for a minimum of 500 full cycles before capacity falls below 60% of original."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many years is 500 charge cycles?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on how hard you ride. A daily rider using 60% of the battery per ride goes through 500 cycles in about 2.3 years; a commuter using 30% per day stretches the same 500 cycles to roughly 4.5 years. Calendar aging sets an independent clock on top of that - most ebike batteries age out in 3-5 years regardless of cycle count."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do fast charging or cold weather use up cycles faster?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both add wear that the cycle counter doesn't show. Fast charging at 2C rates measurably reduces usable cycles compared to the stock 0.5C charger, and riding in freezing temperatures temporarily reduces available capacity, with some risk of long-term damage if you charge a cold battery. Neither shows up as a cycle, but both eat into the same lifespan."
+      }
+    }
+  ]
+}
+</script>
+
+**How many charge cycles does an ebike battery last?**
+A generic lithium-ion ebike battery lasts 500-800 full charge cycles before it drops to 80% of original capacity. A quality LiFePO4 pack lasts 1,000-2,000 cycles. Shimano rates its BT-E8010 STEPS battery at 1,000 charge cycles without significant power loss, and Bosch guarantees its PowerTube batteries for a minimum of 500 full cycles before capacity falls below 60% of original.
 
 **How many years is 500 charge cycles?** It depends entirely on how hard you ride. A daily rider using 60% of the battery per ride goes through 500 cycles in about 2.3 years; a commuter using 30% per day stretches the same 500 cycles to roughly 4.5 years. Calendar aging sets an independent clock on top of that - most ebike batteries age out in 3-5 years regardless of cycle count.
 
