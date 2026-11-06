@@ -347,3 +347,5 @@ Drive no more than 300 miles per day, arrive by 3 PM, and stay at least 3 nights
 **For maximum capacity under $500:** Two **Redodo batteries at $378 total** give you 200Ah of usable power, enough for 2-3 days of boondocking without solar, or indefinite camping with a modest solar setup.
 
 The days of AGM being the "safe" choice are over. When budget lithium costs less per usable amp-hour, less per year of ownership, and roughly 8–20× less per cycle than flooded lead-acid, the only question is which lithium to buy.
+
+For verified specs on every major LiFePO4 brand side by side, including price per 100Ah and cost per cycle, see the [LiFePO4 RV Battery Spec Database](/posts/lifepo4-rv-battery-spec-database/).

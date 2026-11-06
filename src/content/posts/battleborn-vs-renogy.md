@@ -22,13 +22,13 @@ I've tested both battery systems extensively in real-world RV conditions. Battle
 
 Battle Born and Renogy represent two major players in the RV battery market, each offering distinct advantages for RV owners. Battle Born batteries are manufactured in the USA with a focus on premium lithium iron phosphate (LiFePO4) technology. They've built a reputation for reliability and come with an impressive 10-year warranty, making them a popular choice among full-time RVers.
 
-Renogy batteries, on the other hand, provide a more budget-friendly alternative without significantly compromising on performance. Their lithium batteries deliver consistent power and typically come with a 5-year warranty. Many weekend travelers and occasional RV users find Renogy's price-to-performance ratio particularly attractive.
+Renogy batteries, on the other hand, provide a more budget-friendly alternative without significantly compromising on performance. Their lithium batteries deliver consistent power and come with a 5 to 7-year warranty (7 years on the Pro Series). Many weekend travelers and occasional RV users find Renogy's price-to-performance ratio particularly attractive.
 
 The performance differences between these brands become apparent in specific usage scenarios. Battle Born batteries excel in extreme weather conditions, maintaining efficiency in temperatures ranging from -4°F to 135°F. Renogy batteries operate effectively within a slightly narrower temperature range but still perform admirably in most camping environments across the United States.
 
 Weight considerations also factor into the decision. A typical 100Ah Battle Born battery weighs approximately 31 pounds, while a comparable Renogy lithium battery weighs around 26 pounds. Both offer significant weight savings compared to traditional lead-acid batteries, which can weigh 60+ pounds for similar capacity.
 
-Price points differ substantially between these brands. For a 100Ah lithium battery, expect to pay $899-$949 for Battle Born versus roughly $629-$699 for a Renogy 12V 100Ah Smart Pro (self-heating), with Renogy's Core series starting around $280. This price difference reflects Battle Born's longer warranty period and American manufacturing.
+Price points differ substantially between these brands. For a 100Ah lithium battery, expect to pay $799-$949 for Battle Born versus roughly $580-$643 for a Renogy 12V 100Ah Smart Pro (self-heating), with Renogy's Core series starting around $308. This price difference reflects Battle Born's longer warranty period and American manufacturing.
 
 Both brands integrate seamlessly with most RV power systems and offer Bluetooth monitoring capabilities, allowing you to track battery performance from your smartphone. This feature proves invaluable for managing power consumption during extended trips away from shore power.
 
@@ -46,7 +46,7 @@ Both manufacturers implement robust casings, but Battle Born uses heavier-duty m
 
 ### Price Point Comparison
 
-Battle Born batteries cost more than comparable Renogy models. A 100Ah Battle Born battery currently ranges from $899-$949, while Renogy's 12V 100Ah Smart Pro (self-heating) runs $629-$699, and Renogy's Core 100Ah starts around $280. This price difference reflects Battle Born's longer warranty period and premium construction.
+Battle Born batteries cost more than comparable Renogy models. A 100Ah Battle Born battery currently ranges from $799-$949, while Renogy's 12V 100Ah Smart Pro (self-heating) runs about $580-$643, and Renogy's Core Mini 100Ah starts around $308. This price difference reflects Battle Born's longer warranty period and premium construction.
 
 The initial investment difference becomes more significant in multi-battery systems. A four-battery setup for a large RV might cost $3,600-$3,800 with Battle Born versus $2,500-$2,800 with Renogy Smart Pro batteries. Despite the higher upfront cost, Battle Born's longer warranty and 3,000-5,000 cycle rating can make them more economical for full-timers, though the cost-per-cycle math below shows Renogy's current pricing has narrowed that gap considerably.
 
@@ -98,7 +98,7 @@ The premium battery management system (BMS) offers comprehensive protection agai
 
 ### Potential Drawbacks
 
-The high price point presents the most significant barrier. At $899-$949 for a 100Ah battery, Battle Born costs 40-50% more than Renogy's Smart Pro alternatives. A 400Ah system can cost $3,600-$3,800, versus roughly $2,500-$2,800 for an equivalent Renogy Smart Pro setup.
+The high price point presents the most significant barrier. At $799-$949 for a 100Ah battery, Battle Born costs roughly 40-50% more than Renogy's Smart Pro alternatives. A 400Ah system can cost $3,200-$3,800, versus roughly $2,300-$2,600 for an equivalent Renogy Smart Pro setup.
 
 The weight, while lighter than lead-acid, exceeds some competitors. Each 100Ah Battle Born battery weighs 31 pounds, about 5 pounds heavier than comparable Renogy models. This difference becomes noticeable in multi-battery installations where weight distribution matters.
 
@@ -112,7 +112,7 @@ Renogy RV batteries have gained popularity among campers and weekend travelers f
 
 ### Where Renogy Excels
 
-Renogy batteries shine in several key areas that matter to RV owners. The price point represents their most compelling advantage, with the 12V 100Ah Smart Pro (self-heating) typically priced between $629-$699, about 30-40% less than Battle Born alternatives. Renogy's Core 100Ah starts even lower, around $280. This makes them particularly attractive for multi-battery setups where cost differences multiply.
+Renogy batteries shine in several key areas that matter to RV owners. The price point represents their most compelling advantage, with the 12V 100Ah Smart Pro (self-heating) typically priced between $580-$643, about 30% less than Battle Born alternatives. Renogy's Core Mini 100Ah starts even lower, around $308. This makes them particularly attractive for multi-battery setups where cost differences multiply.
 
 Renogy frequently offers promotional discounts and bundle packages that further reduce costs. For a complete 400Ah system, these savings can exceed $1,000 compared to premium brands.
 
@@ -124,7 +124,7 @@ For occasional RVers and weekend campers, the 5,000-cycle lifespan on the Smart 
 
 ### Potential Drawbacks
 
-Despite their strengths, Renogy batteries have limitations worth considering. The 5-year warranty period falls short of Battle Born's 10-year coverage, potentially increasing long-term ownership costs for full-time RVers.
+Despite their strengths, Renogy batteries have limitations worth considering. The 7-year Pro warranty and 5-year prorated Core warranty fall short of Battle Born's 10-year coverage, potentially increasing long-term ownership costs for full-time RVers.
 
 Charging efficiency rates are solid but slightly behind premium alternatives. A 100Ah Renogy handles up to 50A input, extending recharge times to approximately 3 hours for reaching 90% capacity, about an hour longer than Battle Born.
 
@@ -188,25 +188,25 @@ Renogy's BMS uses fixed firmware that cannot be updated in the field. While this
 
 Warranty service processes differ significantly between brands. Battle Born provides direct warranty support with a dedicated technical team that troubleshoots issues remotely before arranging replacements. Their 10-year warranty includes free shipping for warranty claims and a 30-day money-back guarantee for new purchases.
 
-Renogy handles warranty claims through their distribution network with a more structured claim process. Their 5-year warranty requires proof of purchase, photos of the issue, and completion of a troubleshooting checklist. Replacement batteries typically ship within 7-14 business days after claim approval, compared to Battle Born's expedited 3-5 day shipping.
+Renogy handles warranty claims through their distribution network with a more structured claim process. Their warranty claims require proof of purchase, photos of the issue, and completion of a troubleshooting checklist. Replacement batteries typically ship within 7-14 business days after claim approval, compared to Battle Born's expedited 3-5 day shipping.
 
 ## Battle Born vs Renogy: 9-Dimension Spec Comparison
 
 | Dimension | Battle Born 100Ah 12V | Renogy 12V 100Ah Smart Pro |
 |---|---|---|
-| Cold weather discharge performance | Holds ~92% capacity at 25°F; heated model self-heats | Self-heating holds ~85–90% in sub-freezing; charges to -4°F |
+| Cold weather discharge performance | Discharges to -4°F. Holds ~92% capacity at 25°F | Discharges to -4°F. Self-heating lets it charge to -4°F |
 | Cycle life at 80% DoD | 3,000–5,000 cycles | 5,000 cycles |
-| BMS low-temp cutoff | Low-temp charge cutoff (standard); heated model adds self-heating | Low-temp charge cutoff + self-heating |
-| Self-discharge rate/month | ~2% | ~3% |
-| Weight per 100Ah | ~31 lb | ~26 lb |
-| Charger compatibility | 14.2–14.6V LiFePO4 profile | 14.2–14.6V LiFePO4 profile |
-| Warranty terms | 10 years | 5 years |
-| UL/CE/UN38.3 certification status | UL 1973 listed, UN38.3, CE, FCC, RoHS | UN38.3, CE, FCC, RoHS (UL on select models) |
-| Cost per cycle | ~$0.19–$0.31 | ~$0.13 |
+| BMS low-temp cutoff | Blocks charging below 25°F. Heated model adds internal heating | Heater runs from the charger at -4°F to 41°F, then charging resumes |
+| Self-discharge rate/month | 2-3% | Not published on product page |
+| Weight per 100Ah | 31 lb | 26.9 lb |
+| Charger compatibility | 14.2-14.6V charge, 13.4-13.8V float | LiFePO4 profile, 10-14.8V range, 100A max |
+| Warranty terms | 10-year limited | 7 years |
+| UL/CE/UN38.3 certification status | NRTL-listed to UL/CSA 2054 and UL/CSA 62133-2. UL 1642 cells | MSDS, UN38.3, FCC, CE, PSE, UKCA. UL-listed cells |
+| Cost per cycle | ~$0.16-$0.32 | ~$0.12-$0.13 |
 
-The cost-per-cycle figure is the one worth watching, because it has moved a lot with Renogy's recent price cuts. At current pricing, Battle Born's $899-$949 spread over 3,000-5,000 cycles works out to roughly **$0.19-$0.31 per cycle**. Renogy's $629-$699 Smart Pro spread over its 5,000-cycle rating works out to about **$0.13 per cycle**. That's a far narrower gap than the older "$749-$899 Renogy" figures implied, Battle Born is still the premium option with the longer warranty and UL 1973 listing, but Renogy now delivers a meaningfully lower cost per cycle.
+The cost-per-cycle figure is the one worth watching, because it has moved a lot with Renogy's recent price cuts. At current pricing, Battle Born's $799-$949 spread over 3,000-5,000 cycles works out to roughly **$0.16-$0.32 per cycle**. Renogy's $580-$643 Smart Pro spread over its 5,000-cycle rating works out to about **$0.12-$0.13 per cycle**. Battle Born is still the premium option with the longer warranty and pack-level UL 2054 listing. Renogy now delivers a meaningfully lower cost per cycle.
 
-For every Battle Born spec in one place, cold-weather performance, cycle life, BMS cutoff, charger profiles, warranty, and certifications across the 100Ah and 270Ah GC3 lines, see the [Battle Born Batteries Complete Spec Sheet](/posts/battle-born-batteries-spec-sheet/).
+For every Battle Born spec in one place, see the [Battle Born Batteries Complete Spec Sheet](/posts/battle-born-batteries-spec-sheet/). For Renogy's Pro, Core, and AGM lines, see the [Renogy Batteries Complete Spec Sheet](/posts/renogy-batteries-complete-spec-sheet/). To compare both against LiTime, SOK, Dakota Lithium, and CHINS, see the [LiFePO4 RV Battery Spec Database](/posts/lifepo4-rv-battery-spec-database/).
 
 ## Which Battery Is Right for Your RV?
 
@@ -216,7 +216,7 @@ Choosing between Battle Born and Renogy batteries comes down to your specific RV
 
 Full-time RVers benefit from Battle Born's longevity and superior performance. The extended 10-year warranty and 3,000-5,000 cycle lifespan justify the higher initial investment when you're living on the road year-round.
 
-Occasional RVers and weekend warriors often find Renogy batteries provide better value. Their 5,000-cycle rating and 5-year warranty match perfectly with less frequent use patterns. You'll save 30-40% upfront while still getting reliable power for your adventures.
+Occasional RVers and weekend warriors often find Renogy batteries provide better value. Their 5,000-cycle rating and 5 to 7-year warranty match perfectly with less frequent use patterns. You'll save 30-40% upfront while still getting reliable power for your adventures.
 
 ### Climate Considerations
 
@@ -260,11 +260,11 @@ Your comfort level with electrical systems should influence your decision, less 
 
 ### Which is better for full-time RVing, Battle Born or Renogy batteries?
 
-Battle Born batteries are generally preferred for full-time RVing due to their longer 10-year warranty, premium LiFePO4 technology, and superior performance in extreme heat. Though more expensive, they offer greater long-term peace of mind with 3,000-5,000 charge cycles and a UL 1973 listing, making them ideal for those who depend on consistent power year-round.
+Battle Born batteries are generally preferred for full-time RVing due to their longer 10-year warranty, premium LiFePO4 technology, and superior performance in extreme heat. Though more expensive, they offer greater long-term peace of mind with 3,000-5,000 charge cycles and a pack-level UL 2054 listing, making them ideal for those who depend on consistent power year-round.
 
 ### How much more expensive are Battle Born batteries compared to Renogy?
 
-Battle Born batteries typically cost 30-40% more than comparable Renogy models. A 100Ah Battle Born battery currently ranges from $899-$949, while Renogy's 12V 100Ah Smart Pro (self-heating) costs between $629-$699. This price difference reflects Battle Born's American-made components, premium construction, and longer warranty period.
+Battle Born batteries typically cost about 40% more than comparable Renogy models. A 100Ah Battle Born battery currently ranges from $799-$949, while Renogy's 12V 100Ah Smart Pro (self-heating) costs about $580-$643. This price difference reflects Battle Born's American-made components, premium construction, and longer warranty period.
 
 ### How do charging times compare between Battle Born and Renogy?
 
@@ -280,7 +280,7 @@ Both brands now offer self-heating models. Battle Born's heated models and Renog
 
 ### What are the warranty differences between Battle Born and Renogy?
 
-Battle Born offers an industry-leading 10-year warranty with direct customer support and efficient claim processing. Renogy provides a 5-year warranty with a more structured approach to claims. The difference in warranty length reflects Battle Born's confidence in their product's longevity and premium construction.
+Battle Born offers an industry-leading 10-year warranty with direct customer support and efficient claim processing. Renogy provides a 7-year warranty on the Pro Series and a 5-year prorated warranty on Core batteries, with a more structured approach to claims. The difference in warranty length reflects Battle Born's confidence in their product's longevity and premium construction.
 
 ### Are these batteries easy to install in an RV?
 
@@ -288,7 +288,7 @@ Both brands are designed for relatively easy installation. Battle Born batteries
 
 ### Which battery is better for weekend RV travelers?
 
-Renogy batteries represent better value for weekend or occasional RV travelers. Their lower price point, strong performance in moderate temperatures, and 5-year warranty make them ideal for those who don't require the premium features of Battle Born. The cost savings can be significant, especially for multi-battery setups in less demanding conditions.
+Renogy batteries represent better value for weekend or occasional RV travelers. Their lower price point, strong performance in moderate temperatures, and 5 to 7-year warranty make them ideal for those who don't require the premium features of Battle Born. The cost savings can be significant, especially for multi-battery setups in less demanding conditions.
 
 ### How do the cycle counts compare between these batteries?
 

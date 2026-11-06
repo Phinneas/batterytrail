@@ -107,7 +107,7 @@ I outline BMS features to highlight protection and performance.
 - Thermal design: both use temperature cutoffs and conservative charge limits for safety.
 - Certifications: look for UN38.3 transport certification and CE or UL listings where available.
 
-For the full Battle Born spec breakdown across the 100Ah and 270Ah GC3 lines, cycle life, BMS cutoff, charger profiles, warranty terms, and certifications, see the [Battle Born Batteries Complete Spec Sheet](/posts/battle-born-batteries-spec-sheet/).
+For the full Battle Born spec breakdown across the 100Ah and 270Ah GC3 lines, cycle life, BMS cutoff, charger profiles, warranty terms, and certifications, see the [Battle Born Batteries Complete Spec Sheet](/posts/battle-born-batteries-spec-sheet/). LiTime's full lineup is in the [LiTime Batteries Complete Spec Sheet](/posts/litime-batteries-complete-spec-sheet/). To compare both brands against Renogy, SOK, Dakota Lithium, and CHINS, see the [LiFePO4 RV Battery Spec Database](/posts/lifepo4-rv-battery-spec-database/).
 
 ## Performance In Real-World Use
 

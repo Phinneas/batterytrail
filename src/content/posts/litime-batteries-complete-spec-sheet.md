@@ -408,6 +408,8 @@ For warm-weather budget installations, the Classic 100Ah remains the straightfor
 
 ### Related BatteryTrail resources
 
+- [LiFePO4 RV Battery Spec Database (all brands)](/posts/lifepo4-rv-battery-spec-database/)
+- [Ampere Time vs SOK battery spec comparison](/posts/ampere-time-vs-sok-battery-spec-comparison/)
 - [LiTime vs. Battle Born battery comparison](/posts/litime-vs-battle-born-batteries/)
 - [Battle Born Batteries Complete Spec Sheet](/posts/battle-born-batteries-spec-sheet/)
 
